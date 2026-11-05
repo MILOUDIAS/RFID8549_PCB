@@ -1,0 +1,3451 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0") (uuid "ef622ad2-df9b-5948-94f6-2bc282aba9b9") (paper "A3") (title_block (title "RFID8549 test board") (date "2026-10-27") (rev "A") (company "CDTA / University of Blida 1") (comment 1 "Bring-up board for the RFID8549 LF RFID tag (IHP SG13G2), QFN-28") (comment 2 "Test plan: RFID8549 Digital Bring-up Test Scenario"))
+(lib_symbols
+(symbol "rfid8549:RFID8549"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 33.02 40.64 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RFID8549"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524) bold
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://github.com/CDTA-DMN/IHP__RFID8549"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "ISO 11784/11785 FDX-B LF animal-ID tag, IHP SG13G2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RFID8549_0_1"
+				(rectangle
+					(start -38.1 38.1)
+					(end 38.1 -38.1)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "QFN-28"
+					(at 0 -1.27 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "RFID8549_1_1"
+				(pin passive line
+					(at -15.24 -43.18 90)
+					(length 5.08)
+					(name "AC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -43.18 90)
+					(length 5.08)
+					(name "AC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -43.18 90)
+					(length 5.08)
+					(name "V_RECT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -43.18 90)
+					(length 5.08)
+					(name "CE_AC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -43.18 90)
+					(length 5.08)
+					(name "CE_AC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -43.18 90)
+					(length 5.08)
+					(name "MODULATED_BIT_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -43.18 90)
+					(length 5.08)
+					(name "CLK_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 43.18 -15.24 180)
+					(length 5.08)
+					(name "RESET_N_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 43.18 -10.16 180)
+					(length 5.08)
+					(name "POWER_STABLE_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 43.18 -5.08 180)
+					(length 5.08)
+					(name "POWER_STABLE_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 43.18 0 180)
+					(length 5.08)
+					(name "CLK_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 43.18 5.08 180)
+					(length 5.08)
+					(name "RESET_N_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 43.18 10.16 180)
+					(length 5.08)
+					(name "MODULATED_BIT_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 43.18 15.24 180)
+					(length 5.08)
+					(name "SPI_MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 43.18 270)
+					(length 5.08)
+					(name "SPI_CS_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 43.18 270)
+					(length 5.08)
+					(name "SPI_MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 43.18 270)
+					(length 5.08)
+					(name "SPI_SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 43.18 270)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 43.18 270)
+					(length 5.08)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 43.18 270)
+					(length 5.08)
+					(name "IOVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 43.18 270)
+					(length 5.08)
+					(name "IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -43.18 15.24 0)
+					(length 5.08)
+					(name "IOVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -43.18 10.16 0)
+					(length 5.08)
+					(name "IOVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -43.18 5.08 0)
+					(length 5.08)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -43.18 0 0)
+					(length 5.08)
+					(name "BGR_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -43.18 -5.08 0)
+					(length 5.08)
+					(name "LDO2_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -43.18 -10.16 0)
+					(length 5.08)
+					(name "LDO1_VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -43.18 -15.24 0)
+					(length 5.08)
+					(name "LDO1_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -43.18 90)
+					(length 5.08)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+(symbol "Connector_Generic:Conn_01x06"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x06_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Jumper:Jumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Jumper:Jumper_3_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_3_Open"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 3-pole, both open"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+				(at 0 -17.78 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+				(at -1.27 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPDT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*3Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_0_1"
+				(arc
+					(start -2.032 1.016)
+					(mid -1.143 1.3235)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508)
+						(xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.143 1.3235)
+					(end 2.032 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0)
+						(xy 2.286 0.508)
+						(xy 2.286 -0.508)
+						(xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0)
+						(xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54)
+						(xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Connector_Generic:Conn_02x06_Odd_Even"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 1.27 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_02x06_Odd_Even"
+				(at 1.27 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_02x06_Odd_Even_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 3.81 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 5.207)
+					(end 2.54 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 2.54 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -7.493)
+					(end 2.54 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 3.81)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 3.81)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		))
+(symbol (lib_id "rfid8549:RFID8549") (at 210.82 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a4769764-51b8-5862-98b4-00773725a695") (property "Reference" "U1" (at 243.84 53.34 0) (effects (font (size 1.27 1.27))))(property "Value" "RFID8549" (at 210.82 91.44 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias" (at 210.82 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 210.82 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 210.82 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "72b3bcbd-b406-57bb-b2c7-303057623b1e")) (pin "2" (uuid "2b0f4c82-ded5-565a-9e49-be40e90a41c3")) (pin "3" (uuid "ff23e5d8-a9a0-5acb-a5cd-03779aa9f90a")) (pin "4" (uuid "f790f719-43bd-51c8-967c-5480cb8bbc2e")) (pin "5" (uuid "9fc9ddbc-f24a-5a79-9358-70cf8dfd4b0b")) (pin "6" (uuid "b0d252eb-e3de-5111-947f-8e55b5f1a5cc")) (pin "7" (uuid "72f853cd-648a-57fa-a81a-2cddb82b8610")) (pin "8" (uuid "a5bdc128-d577-5dd9-bd83-5926f2b5dce0")) (pin "9" (uuid "ed430a24-0905-5df6-b337-6fab84b6f086")) (pin "10" (uuid "cbe21227-2435-5315-b393-fcaa7dc3bd2b")) (pin "11" (uuid "894b090b-4067-5567-bf92-6504b7a1b236")) (pin "12" (uuid "45524a10-3812-5a38-9f45-d05f0c87e089")) (pin "13" (uuid "bd5fac3f-9992-5429-b364-25ba9f3ebc94")) (pin "14" (uuid "1d5e9dc8-81cc-518d-9fac-bd273105883b")) (pin "15" (uuid "b29909a6-0ee5-59a0-b7d9-388455aa5e10")) (pin "16" (uuid "eb4bc41e-145b-50e8-8e2f-fd2f5f37becb")) (pin "17" (uuid "c9c71d82-dcdb-5569-b505-5b421ece019c")) (pin "18" (uuid "d125c752-a709-5cb7-a65f-3c60e6c70a39")) (pin "19" (uuid "cef5367a-047a-562c-8f46-ee57ed1e552a")) (pin "20" (uuid "4bf2fa44-dd30-5deb-a7b2-e9d8a1e20cfd")) (pin "21" (uuid "2b7fcd1f-c69b-5423-ba53-0b6f9a84e8cf")) (pin "22" (uuid "655a5656-6d56-519d-84a2-94a19590e41b")) (pin "23" (uuid "28991da6-8a06-5e91-a569-15d312dcf277")) (pin "24" (uuid "0acf2267-8b3f-5661-9b0e-a78f376ff95d")) (pin "25" (uuid "e8175ec8-a4c5-5604-9395-b72ff033393f")) (pin "26" (uuid "62bf068f-c16a-53c2-a31d-b6a13df1af3a")) (pin "27" (uuid "fda8ebba-c72c-5479-8523-3074dc708bdb")) (pin "28" (uuid "39eca000-0e95-5408-9bf5-7601aa88894a")) (pin "29" (uuid "e38bd353-4a26-5bd1-80be-590454e362b6")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "U1") (unit 1)))))
+(wire (pts (xy 195.58 137.16) (xy 195.58 139.7)) (stroke (width 0) (type default)) (uuid "e09aa40e-ec79-55b2-ad91-7d173e7f0839"))
+(label "AC2" (at 195.58 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a139d8ac-e521-5c30-a6d4-931b6ec9c942"))
+(wire (pts (xy 200.66 137.16) (xy 200.66 139.7)) (stroke (width 0) (type default)) (uuid "79b82cb0-e3ee-5109-95d2-c5b6926d242d"))
+(label "AC1" (at 200.66 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ffd0e814-1d83-5d2a-9cf3-378ed596fafd"))
+(wire (pts (xy 205.74 137.16) (xy 205.74 139.7)) (stroke (width 0) (type default)) (uuid "3f19c172-c0c4-564d-ab6c-d197c42a7d52"))
+(label "V_RECT" (at 205.74 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3090d765-88c2-5410-960f-a7afc77c7fc8"))
+(wire (pts (xy 210.82 137.16) (xy 210.82 139.7)) (stroke (width 0) (type default)) (uuid "c73543f1-aa46-5eb6-95c4-565d41af4264"))
+(label "CE_AC1" (at 210.82 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5325cd47-4eaa-51e6-a7e6-507344134eb4"))
+(wire (pts (xy 215.9 137.16) (xy 215.9 139.7)) (stroke (width 0) (type default)) (uuid "56cd259a-2113-5d7d-b15b-a722b3be3b5c"))
+(label "CE_AC2" (at 215.9 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e85e2883-60e5-5b6e-9c46-c5be14f3753e"))
+(wire (pts (xy 220.98 137.16) (xy 220.98 139.7)) (stroke (width 0) (type default)) (uuid "eb9a8c09-da5f-574d-8c11-3c3b97502d9d"))
+(label "MODULATED_BIT_IN" (at 220.98 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4e5eb27a-f79e-541f-8200-f2710e4180b6"))
+(wire (pts (xy 226.06 137.16) (xy 226.06 139.7)) (stroke (width 0) (type default)) (uuid "fb5d70f7-d306-516b-ba0a-d156760c4c34"))
+(label "CLK_OUT" (at 226.06 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f700ee01-c70e-560a-9b74-46866f765888"))
+(wire (pts (xy 254 109.22) (xy 256.54 109.22)) (stroke (width 0) (type default)) (uuid "016970cf-7f9f-5467-ba0a-d6f3cb6d7c98"))
+(label "RESET_N_OUT" (at 256.54 109.22 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ebd05435-daf8-53c3-8040-f0ea0a30d68a"))
+(wire (pts (xy 254 104.14) (xy 256.54 104.14)) (stroke (width 0) (type default)) (uuid "8d9da447-0987-5e5b-af97-228dcb785f13"))
+(label "POWER_STABLE_OUT" (at 256.54 104.14 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "701dd29f-f603-5465-b72a-bffdaece1b97"))
+(wire (pts (xy 254 99.06) (xy 256.54 99.06)) (stroke (width 0) (type default)) (uuid "2f1e67c0-2c8d-548f-9eb1-a93c311ac4e4"))
+(label "POWER_STABLE_IN" (at 256.54 99.06 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f252b11a-a21a-5b24-a08f-d66ad6f39beb"))
+(wire (pts (xy 254 93.98) (xy 256.54 93.98)) (stroke (width 0) (type default)) (uuid "a968ecac-5262-5a6d-bb22-d6204aa24a28"))
+(label "CLK_IN" (at 256.54 93.98 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3e5db88a-cbe2-5303-9390-14eff92837ff"))
+(wire (pts (xy 254 88.9) (xy 256.54 88.9)) (stroke (width 0) (type default)) (uuid "907f2dc1-88d5-5ed3-87de-bddce00996d4"))
+(label "RESET_N_IN" (at 256.54 88.9 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "dfc88ef6-b884-5e86-988c-443792766f51"))
+(wire (pts (xy 254 83.82) (xy 256.54 83.82)) (stroke (width 0) (type default)) (uuid "db3087a7-de13-5c5b-b28a-800fc90a9cea"))
+(label "MODULATED_BIT_OUT" (at 256.54 83.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b4f6df28-c469-549a-a3b9-9ec6e70df052"))
+(wire (pts (xy 254 78.74) (xy 256.54 78.74)) (stroke (width 0) (type default)) (uuid "451eab49-95e6-5d90-b674-d80fd74f1593"))
+(label "SPI_MISO" (at 256.54 78.74 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0b053b83-e5aa-54e9-bab1-ec3b9c70d3ed"))
+(wire (pts (xy 226.06 50.8) (xy 226.06 48.26)) (stroke (width 0) (type default)) (uuid "84feb9f9-e4f9-57e7-82ea-ba43b1b5497b"))
+(label "SPI_CS_N" (at 226.06 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "982bd9bc-8f98-5c88-8448-f3d4ac018eea"))
+(wire (pts (xy 220.98 50.8) (xy 220.98 48.26)) (stroke (width 0) (type default)) (uuid "2a9d3bc4-3c0f-5c76-b6bd-e0e13966857e"))
+(label "SPI_MOSI" (at 220.98 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "85e82913-65f0-5102-a23d-a8261223d628"))
+(wire (pts (xy 215.9 50.8) (xy 215.9 48.26)) (stroke (width 0) (type default)) (uuid "38fb7497-3415-5283-af66-1fbfe3b9d714"))
+(label "SPI_SCK" (at 215.9 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "45bb8171-e44f-56af-aee7-5b8fc22c46ac"))
+(wire (pts (xy 210.82 50.8) (xy 210.82 48.26)) (stroke (width 0) (type default)) (uuid "e834a2bc-86f8-567e-8b76-8bc0100b5e4c"))
+(label "GND" (at 210.82 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "47a65a1e-25f3-5921-99c5-83c938e54645"))
+(wire (pts (xy 205.74 50.8) (xy 205.74 48.26)) (stroke (width 0) (type default)) (uuid "dfb31025-f146-51b2-bedc-139c8c6b3543"))
+(label "DVDD" (at 205.74 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4d6a5753-166b-590b-90d6-673d5395c337"))
+(wire (pts (xy 200.66 50.8) (xy 200.66 48.26)) (stroke (width 0) (type default)) (uuid "a1a0510a-ad93-5fd8-a9b1-0e5f1402730b"))
+(label "GND" (at 200.66 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "172a19cf-19b7-5162-9944-15dc3e1e8c75"))
+(wire (pts (xy 195.58 50.8) (xy 195.58 48.26)) (stroke (width 0) (type default)) (uuid "01ef785b-83ab-579b-be60-4e0802372f54"))
+(label "IOVDD" (at 195.58 48.26 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d43730e4-9e8d-50a9-a4f6-b4e075f9e2d3"))
+(wire (pts (xy 167.64 78.74) (xy 165.1 78.74)) (stroke (width 0) (type default)) (uuid "02e513ce-f18c-55f8-baa1-175b609327a3"))
+(label "IOVDD" (at 165.1 78.74 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3d10ae7-977d-5a1f-8d3c-a99d212ba541"))
+(wire (pts (xy 167.64 83.82) (xy 165.1 83.82)) (stroke (width 0) (type default)) (uuid "789d36c6-918f-51c9-b4bb-8af6b8ca0b08"))
+(label "GND" (at 165.1 83.82 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4890a6cf-6de4-5a2a-a1b8-e87ea4a9ca89"))
+(wire (pts (xy 167.64 88.9) (xy 165.1 88.9)) (stroke (width 0) (type default)) (uuid "912afc7f-5d38-51c7-b69e-b1bd9f38a51a"))
+(label "AVDD" (at 165.1 88.9 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "05447558-5c59-59ba-badc-8f10035c340a"))
+(wire (pts (xy 167.64 93.98) (xy 165.1 93.98)) (stroke (width 0) (type default)) (uuid "5bde678a-3e55-56a2-b5bc-0bc2343c8617"))
+(label "BGR_OUT" (at 165.1 93.98 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "84198745-ce3a-5305-8231-0d3ee48812a6"))
+(wire (pts (xy 167.64 99.06) (xy 165.1 99.06)) (stroke (width 0) (type default)) (uuid "566f8d97-447c-559b-a9a6-2ccfc5803a3d"))
+(label "LDO2_OUT" (at 165.1 99.06 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "18abdc9d-6dfb-5394-acc1-f2af3a113e64"))
+(wire (pts (xy 167.64 104.14) (xy 165.1 104.14)) (stroke (width 0) (type default)) (uuid "f56a8b9a-4b8b-5698-abbe-a7bc15b980c0"))
+(label "LDO1_VREF" (at 165.1 104.14 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0d7ff6eb-10fe-52c0-b2f8-6a562b9841ce"))
+(wire (pts (xy 167.64 109.22) (xy 165.1 109.22)) (stroke (width 0) (type default)) (uuid "768e9fca-732b-57dc-a48a-04bdf2ea13bb"))
+(label "LDO1_OUT" (at 165.1 109.22 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "235dbcfc-d51d-58ae-91c1-3f0be5e6467e"))
+(wire (pts (xy 241.3 137.16) (xy 241.3 139.7)) (stroke (width 0) (type default)) (uuid "96748d0a-1014-54b9-afd6-3eb68e8b5b53"))
+(label "GND" (at 241.3 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7f849604-42b5-5a71-99f1-c2f2934d0bcb"))
+(symbol (lib_id "Connector_Generic:Conn_01x06") (at 45.72 35.56 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0658e14c-0bbe-5bdc-bc6e-01479332f1c5") (property "Reference" "J1" (at 45.72 27.94 0) (effects (font (size 1.27 1.27))))(property "Value" "BENCH SUPPLIES" (at 45.72 45.72 0) (effects (font (size 1.27 1.27))))(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6_1x06_P5.00mm_Horizontal" (at 45.72 35.56 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 45.72 35.56 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 45.72 35.56 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c1eda8d8-5cff-53f5-9292-317d45138956")) (pin "2" (uuid "035999de-bf57-5e24-a23f-09f7c0823c6e")) (pin "3" (uuid "30b0e179-f140-575f-a2b9-c3ca477a0775")) (pin "4" (uuid "d101f8dd-e1f1-5bd1-ab28-d6da400d6694")) (pin "5" (uuid "f8129858-6100-5335-a024-965f589a15c0")) (pin "6" (uuid "ac5353cb-22d9-5c11-92f1-f09b64a6cf3d")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J1") (unit 1)))))
+(wire (pts (xy 40.64 30.48) (xy 38.1 30.48)) (stroke (width 0) (type default)) (uuid "5550db29-67cd-5c3e-8d0f-80ba5fd4e2cf"))
+(label "IOVDD_IN" (at 38.1 30.48 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b71cb705-3e7b-56a3-a183-a04c73bcc498"))
+(wire (pts (xy 40.64 33.02) (xy 38.1 33.02)) (stroke (width 0) (type default)) (uuid "4b24c0e7-a642-5052-8175-36c39ae6ba8a"))
+(label "GND" (at 38.1 33.02 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "91aa467d-eb00-502c-9901-93f4999c6dbb"))
+(wire (pts (xy 40.64 35.56) (xy 38.1 35.56)) (stroke (width 0) (type default)) (uuid "929f9da4-db08-5571-906f-f70130724d96"))
+(label "DVDD_BENCH" (at 38.1 35.56 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f1cdadaf-6a5a-50f3-8661-3a0fee51b8b5"))
+(wire (pts (xy 40.64 38.1) (xy 38.1 38.1)) (stroke (width 0) (type default)) (uuid "029d8da3-e034-5550-bad4-3449932fbf42"))
+(label "GND" (at 38.1 38.1 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "22485698-f247-5c1e-85b5-c73e05af4aaa"))
+(wire (pts (xy 40.64 40.64) (xy 38.1 40.64)) (stroke (width 0) (type default)) (uuid "9b73b4a2-dae0-5234-8cf2-fa5d34e25e52"))
+(label "AVDD_BENCH" (at 38.1 40.64 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5730ee47-d2a0-5362-93af-76e62fb020af"))
+(wire (pts (xy 40.64 43.18) (xy 38.1 43.18)) (stroke (width 0) (type default)) (uuid "d10a731b-17cf-5792-b6cd-4c0228d801f1"))
+(label "GND" (at 38.1 43.18 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "74e162ed-c2d2-52b5-87f6-536c2cf960ff"))
+(symbol (lib_id "Device:C") (at 66.04 22.86 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f9d1bc5b-57fa-549f-8623-c5096610abed") (property "Reference" "C1" (at 66.04 19.05 90) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 66.04 26.67 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 66.04 22.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 22.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 22.86 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "3c46cb21-d3df-50d8-bdf2-09da30968c31")) (pin "2" (uuid "645f5ccf-bded-5c17-9164-7fa0469c9c97")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C1") (unit 1)))))
+(wire (pts (xy 62.23 22.86) (xy 59.69 22.86)) (stroke (width 0) (type default)) (uuid "f259134f-019f-5622-adb4-84744d65d7aa"))
+(label "IOVDD_IN" (at 59.69 22.86 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e5d293b0-5cd3-511d-9cb5-6b2526214718"))
+(wire (pts (xy 69.85 22.86) (xy 72.39 22.86)) (stroke (width 0) (type default)) (uuid "186f136b-53e2-5edf-a7e8-def9dfe5b0dd"))
+(label "GND" (at 72.39 22.86 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "21df085f-135c-5d2e-9353-50a7ce043c68"))
+(symbol (lib_id "Device:C") (at 66.04 33.02 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "eb3071b3-a961-598c-8e1f-3d07d652d6b8") (property "Reference" "C4" (at 66.04 29.21 90) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 66.04 36.83 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 66.04 33.02 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 33.02 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 33.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "02ece98a-1d4e-5d86-b888-0f91e72bf800")) (pin "2" (uuid "11d13569-c81f-526a-a025-0eab3f350bd9")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C4") (unit 1)))))
+(wire (pts (xy 62.23 33.02) (xy 59.69 33.02)) (stroke (width 0) (type default)) (uuid "fd710181-8bd5-5c95-bb2f-e509a8537fe8"))
+(label "DVDD_BENCH" (at 59.69 33.02 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ac96273c-5b58-5e42-941f-130bb6d88d60"))
+(wire (pts (xy 69.85 33.02) (xy 72.39 33.02)) (stroke (width 0) (type default)) (uuid "812a32d7-0695-589e-891a-277cd45568a3"))
+(label "GND" (at 72.39 33.02 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "309a0728-1293-5a01-b888-ceb1985048a4"))
+(symbol (lib_id "Device:C") (at 66.04 43.18 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f3042757-26da-5800-ae71-4699a59f2232") (property "Reference" "C6" (at 66.04 39.37 90) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 66.04 46.99 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 66.04 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "818c35d1-8288-5c7b-ba66-b1b0e75f3290")) (pin "2" (uuid "36b925ac-b73e-51e7-b05e-30126d365cf9")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C6") (unit 1)))))
+(wire (pts (xy 62.23 43.18) (xy 59.69 43.18)) (stroke (width 0) (type default)) (uuid "d96245e6-1ebd-5f36-800e-901cfaf84e3e"))
+(label "AVDD_BENCH" (at 59.69 43.18 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "09165599-895d-5d55-8b02-f3bd68dbee2b"))
+(wire (pts (xy 69.85 43.18) (xy 72.39 43.18)) (stroke (width 0) (type default)) (uuid "cad6bbaa-f6da-54d9-829c-49e5e806672d"))
+(label "GND" (at 72.39 43.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1e85dfc9-13a8-5e44-a45b-8a08f8ec31fe"))
+(symbol (lib_id "Device:C") (at 66.04 55.88 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "15f121a5-c717-5d04-8889-d44b89ecc4c1") (property "Reference" "C2" (at 66.04 52.07 90) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 66.04 59.69 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 66.04 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "087aba61-161b-51bc-90f2-38a327759abc")) (pin "2" (uuid "72f52d46-6736-5e39-9a84-8c191f29848e")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C2") (unit 1)))))
+(wire (pts (xy 62.23 55.88) (xy 59.69 55.88)) (stroke (width 0) (type default)) (uuid "08f730ea-2bc5-56d0-b7b5-cd684aa4d345"))
+(label "IOVDD" (at 59.69 55.88 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5b65ebd8-1161-5390-b637-f4ada1838788"))
+(wire (pts (xy 69.85 55.88) (xy 72.39 55.88)) (stroke (width 0) (type default)) (uuid "cf2e53bb-39d7-5986-bccd-f5824415d218"))
+(label "GND" (at 72.39 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "67bdbb73-5565-54fe-b61f-f9989062f587"))
+(symbol (lib_id "Device:C") (at 66.04 66.04 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c0ec2ee7-030c-55bc-9a2e-5517c64a5f62") (property "Reference" "C3" (at 66.04 62.23 90) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 66.04 69.85 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 66.04 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8b739e59-6a33-5f3f-a6ae-d4ac3cacc8fa")) (pin "2" (uuid "3bff4068-c719-53ac-b42c-8db58fdb9764")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C3") (unit 1)))))
+(wire (pts (xy 62.23 66.04) (xy 59.69 66.04)) (stroke (width 0) (type default)) (uuid "00a86103-40e4-5a75-8cd9-48754ce437da"))
+(label "IOVDD" (at 59.69 66.04 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d11c896e-e730-52b1-9646-efbfd387192c"))
+(wire (pts (xy 69.85 66.04) (xy 72.39 66.04)) (stroke (width 0) (type default)) (uuid "ed12f764-607f-5499-90cb-ddc8a216ca7b"))
+(label "GND" (at 72.39 66.04 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b4ef0d55-a019-54b4-bee1-349245b3c0f1"))
+(symbol (lib_id "Device:C") (at 66.04 76.2 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0adbdc10-1702-5a57-a77f-7c96eb62821e") (property "Reference" "C5" (at 66.04 72.39 90) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 66.04 80.01 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 66.04 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 76.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d424d03a-26ef-53da-a461-8236a0e03f0c")) (pin "2" (uuid "f95c88c4-d4f3-5064-8611-46adc69e7839")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C5") (unit 1)))))
+(wire (pts (xy 62.23 76.2) (xy 59.69 76.2)) (stroke (width 0) (type default)) (uuid "8ac24a81-59a0-5680-babe-6f88b99ce1d9"))
+(label "DVDD" (at 59.69 76.2 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "031909b9-fba3-5022-b33d-49ec32af014f"))
+(wire (pts (xy 69.85 76.2) (xy 72.39 76.2)) (stroke (width 0) (type default)) (uuid "1f93f525-cb29-574d-bcab-4069635d48f7"))
+(label "GND" (at 72.39 76.2 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "459e57b9-d138-5977-bcfe-ad02f6ef5ef4"))
+(symbol (lib_id "Device:C") (at 66.04 86.36 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2695382b-3796-5acb-9073-e742939a9ec7") (property "Reference" "C7" (at 66.04 82.55 90) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 66.04 90.17 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 66.04 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 86.36 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c8ded873-940c-53c0-b4ca-728580d1c158")) (pin "2" (uuid "87dbeaf9-4993-5657-b335-da6650aaaffe")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C7") (unit 1)))))
+(wire (pts (xy 62.23 86.36) (xy 59.69 86.36)) (stroke (width 0) (type default)) (uuid "4db5884f-efc5-517e-a050-f54881c08a1c"))
+(label "AVDD" (at 59.69 86.36 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ac4adf37-008c-508d-990b-e5cb8f34e574"))
+(wire (pts (xy 69.85 86.36) (xy 72.39 86.36)) (stroke (width 0) (type default)) (uuid "9a29e388-e582-5d75-ab8f-a0161a8e6f97"))
+(label "GND" (at 72.39 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "092dec9c-4f50-57f3-bd3e-fba9ac453409"))
+(symbol (lib_id "Jumper:Jumper_2_Open") (at 101.6 25.4 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "85163923-525d-5825-b1a0-506c582fae74") (property "Reference" "JP10" (at 101.6 21.59 0) (effects (font (size 1.27 1.27))))(property "Value" "I IOVDD" (at 101.6 19.05 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 101.6 25.4 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 101.6 25.4 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 101.6 25.4 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "dd6e8614-f141-5f87-a28a-3eed113e2308")) (pin "2" (uuid "f6dc3939-e68f-53ff-8e56-21079126dec5")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP10") (unit 1)))))
+(wire (pts (xy 96.52 25.4) (xy 93.98 25.4)) (stroke (width 0) (type default)) (uuid "92582964-64dc-5b08-a47d-15b4aa40f207"))
+(label "IOVDD_IN" (at 93.98 25.4 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a9cc7648-bf0f-54a9-a287-fab96bb505fc"))
+(wire (pts (xy 106.68 25.4) (xy 109.22 25.4)) (stroke (width 0) (type default)) (uuid "792d49d3-9887-5e67-8c80-64af02a7347c"))
+(label "IOVDD" (at 109.22 25.4 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "396102bb-8d9a-54e1-99a7-ca618197fcf8"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 101.6 38.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f871a89a-3653-5b59-9916-d033a491d3fd") (property "Reference" "JP8" (at 101.6 34.29 0) (effects (font (size 1.27 1.27))))(property "Value" "DVDD SRC" (at 101.6 31.75 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 101.6 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 101.6 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 101.6 38.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "322b9ab2-659c-5586-acb6-e6dc4d100115")) (pin "2" (uuid "91a8cafe-ada5-5174-90c8-a0910b554c00")) (pin "3" (uuid "3bc485fe-98f9-53b3-955f-096d35a498ab")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP8") (unit 1)))))
+(wire (pts (xy 96.52 38.1) (xy 93.98 38.1)) (stroke (width 0) (type default)) (uuid "06305c6f-a8b0-5890-b593-c94fa59e02f5"))
+(label "LDO1_OUT" (at 93.98 38.1 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e0b659bc-d12d-5fbe-9e35-62c999b44c1c"))
+(wire (pts (xy 101.6 41.91) (xy 101.6 44.45)) (stroke (width 0) (type default)) (uuid "d943c479-a315-5e0c-92fe-34d8ed694057"))
+(label "DVDD_SEL" (at 101.6 44.45 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5ebdea85-e15d-54a6-ae4f-f58f98ea9154"))
+(wire (pts (xy 106.68 38.1) (xy 109.22 38.1)) (stroke (width 0) (type default)) (uuid "27f1e3d1-07e4-5f0b-8670-f4ba9877cb02"))
+(label "DVDD_BENCH" (at 109.22 38.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2bd0f2ea-9518-5332-a230-cc09657482c8"))
+(symbol (lib_id "Jumper:Jumper_2_Open") (at 101.6 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b9982362-6e90-5c39-9042-f713e8f4a4ec") (property "Reference" "JP11" (at 101.6 57.15 0) (effects (font (size 1.27 1.27))))(property "Value" "I DVDD" (at 101.6 54.61 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 101.6 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 101.6 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 101.6 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2340f7b5-fdf9-516d-97ee-e4b807f23e73")) (pin "2" (uuid "4fa7e02c-832c-50b4-aa00-760a441fa093")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP11") (unit 1)))))
+(wire (pts (xy 96.52 60.96) (xy 93.98 60.96)) (stroke (width 0) (type default)) (uuid "e632c5c0-458d-51fd-896d-db913e3b275c"))
+(label "DVDD_SEL" (at 93.98 60.96 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a2ffcbe6-0277-5c0f-a2bb-881b0d968ba7"))
+(wire (pts (xy 106.68 60.96) (xy 109.22 60.96)) (stroke (width 0) (type default)) (uuid "0afabff9-79db-5972-b03a-790b670b70af"))
+(label "DVDD" (at 109.22 60.96 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "627d0adc-35c5-59c7-91cf-1f9c17b21590"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 101.6 73.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a057b69f-0369-577c-a91d-f4cd16bea26d") (property "Reference" "JP7" (at 101.6 69.85 0) (effects (font (size 1.27 1.27))))(property "Value" "AVDD SRC" (at 101.6 67.31 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 101.6 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 101.6 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 101.6 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "551980f2-61ed-51b4-b8ea-de8dbac59e93")) (pin "2" (uuid "91a6f87f-62a4-5e72-ab35-0c151bd62c4d")) (pin "3" (uuid "99ad21fb-7eaf-57bf-99ca-8e75ef261610")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP7") (unit 1)))))
+(wire (pts (xy 96.52 73.66) (xy 93.98 73.66)) (stroke (width 0) (type default)) (uuid "adabef78-d1aa-53e0-a50c-f2c596a05cc6"))
+(label "V_RECT" (at 93.98 73.66 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a36d1eef-af1f-5d9e-9de2-b2cd16209969"))
+(wire (pts (xy 101.6 77.47) (xy 101.6 80.01)) (stroke (width 0) (type default)) (uuid "c5f5e344-988c-5ff6-a0cf-664f08fd0a95"))
+(label "AVDD_SEL" (at 101.6 80.01 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b6e191c6-40bb-520b-9afd-fefdd3b9524d"))
+(wire (pts (xy 106.68 73.66) (xy 109.22 73.66)) (stroke (width 0) (type default)) (uuid "7938d4ab-a177-5fd5-9b45-b934febde83c"))
+(label "AVDD_BENCH" (at 109.22 73.66 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2e0468c2-848b-52c0-a8a6-fcea64b6dbf0"))
+(symbol (lib_id "Jumper:Jumper_2_Open") (at 101.6 96.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0c90bc43-705f-59c9-a2c7-718a23700d0e") (property "Reference" "JP12" (at 101.6 92.71 0) (effects (font (size 1.27 1.27))))(property "Value" "I AVDD" (at 101.6 90.17 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 101.6 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 101.6 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 101.6 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "4a501fb5-d12e-57ac-a4a2-66352d565ea5")) (pin "2" (uuid "f2e8ca6f-472b-5260-85ee-5f6abaf7295c")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP12") (unit 1)))))
+(wire (pts (xy 96.52 96.52) (xy 93.98 96.52)) (stroke (width 0) (type default)) (uuid "e0909072-ed5b-55e3-a712-c2e5e7fff573"))
+(label "AVDD_SEL" (at 93.98 96.52 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4d5e9a62-2cc1-53a1-8471-ee8613c4ece3"))
+(wire (pts (xy 106.68 96.52) (xy 109.22 96.52)) (stroke (width 0) (type default)) (uuid "5930da6a-c867-56ee-8381-29ad22f23f84"))
+(label "AVDD" (at 109.22 96.52 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3f337876-9dfd-5061-8b4d-dd4481b158e3"))
+(symbol (lib_id "power:PWR_FLAG") (at 25.4 96.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b84d9cbf-f420-5e7f-bf21-044b45527f95") (property "Reference" "#FLG01" (at 25.4 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Value" "PWR_FLAG" (at 25.4 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "" (at 25.4 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 25.4 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 25.4 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0242dc90-7df0-5b3c-8079-620c05fd5998")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "#FLG01") (unit 1)))))
+(wire (pts (xy 25.4 96.52) (xy 25.4 99.06)) (stroke (width 0) (type default)) (uuid "6c7a6010-ed67-5612-81e8-f924463a0d52"))
+(label "GND" (at 25.4 99.06 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e8f81375-62d8-56d5-8103-b98559c8f65b"))
+(symbol (lib_id "power:PWR_FLAG") (at 35.56 96.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9771449e-6fc7-52a7-88e5-f559ccce7389") (property "Reference" "#FLG02" (at 35.56 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Value" "PWR_FLAG" (at 35.56 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "" (at 35.56 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 35.56 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 35.56 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "71e370ff-a888-597a-9693-81dbac2e7fd9")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "#FLG02") (unit 1)))))
+(wire (pts (xy 35.56 96.52) (xy 35.56 99.06)) (stroke (width 0) (type default)) (uuid "e3ced36a-acb4-5d8b-8905-a4cf2e93b89c"))
+(label "IOVDD" (at 35.56 99.06 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "63b2dd93-cc09-5af9-9d7e-f0d2a68dfa31"))
+(symbol (lib_id "power:PWR_FLAG") (at 45.72 96.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "581c8e2d-9123-50fc-9cbf-6a6f25d1c2a0") (property "Reference" "#FLG03" (at 45.72 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Value" "PWR_FLAG" (at 45.72 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "" (at 45.72 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 45.72 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 45.72 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "98339557-4d70-568d-a27b-f603c0662054")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "#FLG03") (unit 1)))))
+(wire (pts (xy 45.72 96.52) (xy 45.72 99.06)) (stroke (width 0) (type default)) (uuid "ada25e75-00ed-5bb5-a223-9743530f1860"))
+(label "DVDD" (at 45.72 99.06 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9f4a4698-51d6-58ef-a5eb-f9cf5e2a42d0"))
+(symbol (lib_id "power:PWR_FLAG") (at 55.88 96.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "be5078d1-ff03-5151-90e8-ec8f26966f0a") (property "Reference" "#FLG04" (at 55.88 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Value" "PWR_FLAG" (at 55.88 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "" (at 55.88 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 55.88 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 55.88 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "951aed3a-b0e7-5181-bf7b-458a954a747a")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "#FLG04") (unit 1)))))
+(wire (pts (xy 55.88 96.52) (xy 55.88 99.06)) (stroke (width 0) (type default)) (uuid "9184b6ba-5098-5d67-ba91-f58b40a8a6f3"))
+(label "AVDD" (at 55.88 99.06 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9bd76897-364c-54d1-8edd-76a284963155"))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 40.64 137.16 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b7909714-d7a8-51a4-ae70-dade3fa7bc40") (property "Reference" "J4" (at 40.64 134.62 0) (effects (font (size 1.27 1.27))))(property "Value" "VREF IN" (at 40.64 142.24 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 40.64 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 137.16 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "339e9fa8-0bb0-5ec7-9343-04026723ce5b")) (pin "2" (uuid "e34b13db-1f88-5167-88c3-f493997c1d76")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J4") (unit 1)))))
+(wire (pts (xy 35.56 137.16) (xy 33.02 137.16)) (stroke (width 0) (type default)) (uuid "9a75ac46-455d-5860-baee-3e5152dafc17"))
+(label "VREF_EXT" (at 33.02 137.16 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0fec7da5-5d54-5def-a719-bdc0bf60d022"))
+(wire (pts (xy 35.56 139.7) (xy 33.02 139.7)) (stroke (width 0) (type default)) (uuid "4d7069c2-e6bf-55b1-958b-8549c9870606"))
+(label "GND" (at 33.02 139.7 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ca22f1a0-7386-5808-a71f-d136322b0520"))
+(symbol (lib_id "Device:R") (at 66.04 132.08 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d4988f15-ff79-501e-a5fc-58b2f57b0ae8") (property "Reference" "R15" (at 66.04 129.54 90) (effects (font (size 1.27 1.27))))(property "Value" "15k" (at 66.04 134.62 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 66.04 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "bb056d22-5f07-5690-a9ec-3530c6dc5a5d")) (pin "2" (uuid "d170793b-993b-5861-8043-d616bb0454f4")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R15") (unit 1)))))
+(wire (pts (xy 62.23 132.08) (xy 59.69 132.08)) (stroke (width 0) (type default)) (uuid "e05b754f-5b6d-5780-8796-b6c120c158f0"))
+(label "IOVDD" (at 59.69 132.08 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "68f304d7-2a5c-5d00-a00f-3c465113a3dc"))
+(wire (pts (xy 69.85 132.08) (xy 72.39 132.08)) (stroke (width 0) (type default)) (uuid "be1b0b83-ffc2-5697-bbfb-22fd58af7f2a"))
+(label "RV_TOP" (at 72.39 132.08 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c07c6340-a087-5b46-862f-c7408b94c1d5"))
+(symbol (lib_id "Device:R_Potentiometer") (at 88.9 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "66d4bc80-5e06-5f60-9495-b97e8240258a") (property "Reference" "RV1" (at 82.55 144.145 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 82.55 146.685 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" (at 88.9 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 88.9 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 88.9 144.78 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a36349f6-84ab-5ce3-b7f6-9fe096c3d13a")) (pin "2" (uuid "6944a491-950a-5d52-98e3-320bcb613c15")) (pin "3" (uuid "3f80d5e9-218d-59d2-ac33-1be851183018")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "RV1") (unit 1)))))
+(wire (pts (xy 88.9 140.97) (xy 88.9 138.43)) (stroke (width 0) (type default)) (uuid "accba521-903c-5b7b-afb9-3d12094e3dd0"))
+(label "RV_TOP" (at 88.9 138.43 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "985d60a8-dee0-52db-bd1d-1f3fdf03b37c"))
+(wire (pts (xy 92.71 144.78) (xy 95.25 144.78)) (stroke (width 0) (type default)) (uuid "02289ba2-d3bd-50b3-8030-8756d8c2366a"))
+(label "VREF_TRIM" (at 95.25 144.78 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f922f050-db29-5fc6-9149-f133f316ca01"))
+(wire (pts (xy 88.9 148.59) (xy 88.9 151.13)) (stroke (width 0) (type default)) (uuid "987daedd-bb59-5a2f-b8f9-324e3c60a348"))
+(label "GND" (at 88.9 151.13 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1fc1f8ce-a267-56d6-a81e-d2f617f5b849"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 114.3 137.16 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fec34b10-e6c4-5ba9-aa52-5f88bcbeddaa") (property "Reference" "JP9" (at 114.3 133.35 0) (effects (font (size 1.27 1.27))))(property "Value" "VREF SRC" (at 114.3 130.81 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 114.3 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 114.3 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 114.3 137.16 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "923d77d2-c8bc-54e0-9e40-19478709d4bb")) (pin "2" (uuid "aa1402cb-6e46-544f-ac77-a0681d92b058")) (pin "3" (uuid "51e85eed-a515-58c7-806f-315d9b99dc8a")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP9") (unit 1)))))
+(wire (pts (xy 109.22 137.16) (xy 106.68 137.16)) (stroke (width 0) (type default)) (uuid "8cfc1be8-ab9a-54dd-9b70-0dfcf8287059"))
+(label "VREF_TRIM" (at 106.68 137.16 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8aec5701-c0fb-5ac7-8267-f8958c87fdf8"))
+(wire (pts (xy 114.3 140.97) (xy 114.3 143.51)) (stroke (width 0) (type default)) (uuid "90a0b64d-3ae7-5fca-83d5-15211aa7ee0f"))
+(label "LDO1_VREF" (at 114.3 143.51 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6ebd2119-2538-5bd6-953f-988be1cf338f"))
+(wire (pts (xy 119.38 137.16) (xy 121.92 137.16)) (stroke (width 0) (type default)) (uuid "425b110b-d507-53fb-869f-fbcde93009ec"))
+(label "VREF_EXT" (at 121.92 137.16 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3dc93216-3be0-5f02-9322-59b6efb91e9f"))
+(symbol (lib_id "Device:C") (at 66.04 154.94 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "970de834-bb8a-5e9b-a634-f5b0f546ab3e") (property "Reference" "C9" (at 66.04 151.13 90) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 66.04 158.75 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 66.04 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 66.04 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 66.04 154.94 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "88e29e26-b4a7-57ea-988f-085686295243")) (pin "2" (uuid "36c549ca-5730-5329-8579-5ba1c9cc7bcf")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C9") (unit 1)))))
+(wire (pts (xy 62.23 154.94) (xy 59.69 154.94)) (stroke (width 0) (type default)) (uuid "dbbdc3c2-a66a-5771-910a-080b01b7daf7"))
+(label "LDO1_VREF" (at 59.69 154.94 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d2693038-bc06-52d7-bee1-b1038097835a"))
+(wire (pts (xy 69.85 154.94) (xy 72.39 154.94)) (stroke (width 0) (type default)) (uuid "dda27f07-df79-53e2-aa37-049f129178d3"))
+(label "GND" (at 72.39 154.94 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "319ac967-6e31-5d69-957a-0e5669d50ad3"))
+(symbol (lib_id "Device:C") (at 40.64 187.96 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "22a9b6cc-c2c6-5bcb-a802-7f3a209e0f04") (property "Reference" "C8" (at 40.64 184.15 90) (effects (font (size 1.27 1.27))))(property "Value" "10n" (at 40.64 191.77 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 40.64 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 187.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "4cd81113-9505-5884-ae50-bda2069a32e5")) (pin "2" (uuid "7ab89a02-2a1a-5efd-b196-41b6e930e1eb")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C8") (unit 1)))))
+(wire (pts (xy 36.83 187.96) (xy 34.29 187.96)) (stroke (width 0) (type default)) (uuid "5813c143-01b8-5f80-9765-de4bd4db5ccb"))
+(label "V_RECT" (at 34.29 187.96 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0959e9af-ccb0-5f38-9e8c-15cdb5498a3f"))
+(wire (pts (xy 44.45 187.96) (xy 46.99 187.96)) (stroke (width 0) (type default)) (uuid "6b79725d-6958-5723-950a-0a6be7411792"))
+(label "GND" (at 46.99 187.96 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2558e482-e27b-5934-9fe6-9f5baf1eec13"))
+(symbol (lib_id "Device:R") (at 40.64 198.12 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "89007f5d-63dd-58bd-bbe4-8039ca99b9c6") (property "Reference" "R17" (at 40.64 195.58 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 40.64 200.66 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 40.64 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 198.12 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1599bd5d-772e-571c-8e35-0ceba0519d28")) (pin "2" (uuid "fef842a1-9804-5593-8ce7-d22508515e54")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R17") (unit 1)))))
+(wire (pts (xy 36.83 198.12) (xy 34.29 198.12)) (stroke (width 0) (type default)) (uuid "b3e16322-1200-582d-ab3c-6f1e46264a5c"))
+(label "V_RECT" (at 34.29 198.12 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fa1e994b-3660-50e4-932f-501c14a07516"))
+(wire (pts (xy 44.45 198.12) (xy 46.99 198.12)) (stroke (width 0) (type default)) (uuid "81874088-9dd8-52f2-b0a8-bce656db71e3"))
+(label "GND" (at 46.99 198.12 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "00c5b903-4e51-556e-85fd-341457e3e7f1"))
+(symbol (lib_id "Device:C") (at 40.64 208.28 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "fe82128a-ec0a-541b-bcdc-7bd2645f9de1") (property "Reference" "C10" (at 40.64 204.47 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 40.64 212.09 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 40.64 208.28 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 208.28 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 208.28 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "4088e041-3766-5853-80a7-5dbe17df3d76")) (pin "2" (uuid "632187bd-b663-5fc4-a102-eff7bfe6a1ac")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C10") (unit 1)))))
+(wire (pts (xy 36.83 208.28) (xy 34.29 208.28)) (stroke (width 0) (type default)) (uuid "f3492e19-79c6-57ae-8413-f7ce40d58054"))
+(label "LDO1_OUT" (at 34.29 208.28 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "adbf8c35-bff6-5d24-a1d1-9480795410e8"))
+(wire (pts (xy 44.45 208.28) (xy 46.99 208.28)) (stroke (width 0) (type default)) (uuid "6509e8dd-0236-543b-bd4e-d7e60b366e87"))
+(label "GND" (at 46.99 208.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9a65b080-6237-55b1-b34a-b3fc3e2fc6e8"))
+(symbol (lib_id "Device:R") (at 40.64 218.44 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "7850c01c-6115-5b56-99ab-b40ed8dcfdb6") (property "Reference" "R18" (at 40.64 215.9 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 40.64 220.98 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 40.64 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 218.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "925098df-3bc9-5f1e-9da6-9d09e3871c9f")) (pin "2" (uuid "af341e2a-36ce-50f9-a527-ff3e12860284")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R18") (unit 1)))))
+(wire (pts (xy 36.83 218.44) (xy 34.29 218.44)) (stroke (width 0) (type default)) (uuid "2f1e5898-340f-5b40-a049-da82d971de62"))
+(label "LDO1_OUT" (at 34.29 218.44 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b772deb5-29e7-513f-844e-43e8365e14be"))
+(wire (pts (xy 44.45 218.44) (xy 46.99 218.44)) (stroke (width 0) (type default)) (uuid "f8384dec-2c6e-5952-8aad-c86a78226af9"))
+(label "GND" (at 46.99 218.44 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a07da530-ee53-5ac8-afed-83281bf3de01"))
+(symbol (lib_id "Device:C") (at 40.64 228.6 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "c94634ab-7bc3-5c5f-822d-d110dc034c25") (property "Reference" "C11" (at 40.64 224.79 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 40.64 232.41 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 40.64 228.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 228.6 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "9049bdf1-9271-56a6-8df7-62e2cb88553d")) (pin "2" (uuid "2f2eec9e-0375-5cb5-b9b3-0cdac6cbf013")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C11") (unit 1)))))
+(wire (pts (xy 36.83 228.6) (xy 34.29 228.6)) (stroke (width 0) (type default)) (uuid "ebcd6990-94f5-5102-a0a6-ea5a84ba7e82"))
+(label "LDO2_OUT" (at 34.29 228.6 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "57299f26-1755-5bab-931d-18e920bfc595"))
+(wire (pts (xy 44.45 228.6) (xy 46.99 228.6)) (stroke (width 0) (type default)) (uuid "21c611dc-170f-55da-aa22-5b3007bd9e3d"))
+(label "GND" (at 46.99 228.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "21c09422-3d6c-52de-b737-c5dcdea68c2c"))
+(symbol (lib_id "Device:R") (at 40.64 238.76 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "725cdc20-8bc6-55e1-a52e-7e92c370bbed") (property "Reference" "R19" (at 40.64 236.22 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 40.64 241.3 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 40.64 238.76 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 40.64 238.76 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 40.64 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1c1d0743-1904-50ad-85dd-db2f31fe806b")) (pin "2" (uuid "160f3f4d-1908-5364-bccb-2cd65ca4baab")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R19") (unit 1)))))
+(wire (pts (xy 36.83 238.76) (xy 34.29 238.76)) (stroke (width 0) (type default)) (uuid "55180673-4289-598a-861f-4e567de38c82"))
+(label "LDO2_OUT" (at 34.29 238.76 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "38438c16-efbe-52f6-8854-dd1329786d6c"))
+(wire (pts (xy 44.45 238.76) (xy 46.99 238.76)) (stroke (width 0) (type default)) (uuid "5703113d-d684-52f6-b207-bcd6053258bf"))
+(label "GND" (at 46.99 238.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1abc177b-7604-5d36-a37f-1ecf550e9fc0"))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 165.1 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "81859e08-0f3d-50c5-b626-198e2a7dcd1c") (property "Reference" "J3" (at 165.1 198.12 0) (effects (font (size 1.27 1.27))))(property "Value" "COIL" (at 165.1 205.74 0) (effects (font (size 1.27 1.27))))(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" (at 165.1 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 165.1 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 165.1 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "06ee18f7-f2dd-55e8-a50b-cfdeb7a6ad66")) (pin "2" (uuid "e3ce2e2a-b5d4-5e83-8fde-95092e210c0e")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J3") (unit 1)))))
+(wire (pts (xy 160.02 200.66) (xy 157.48 200.66)) (stroke (width 0) (type default)) (uuid "80d31e45-edd3-5834-8a99-c55718bb71fa"))
+(label "AC1" (at 157.48 200.66 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ff61e11b-1ae7-53c0-bc2a-c1b60150ae50"))
+(wire (pts (xy 160.02 203.2) (xy 157.48 203.2)) (stroke (width 0) (type default)) (uuid "46ef9ab4-be3f-581b-bec3-e0211fb848a2"))
+(label "AC2" (at 157.48 203.2 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7e4a7f40-9dfa-54da-a281-a5019048d225"))
+(symbol (lib_id "Device:C") (at 190.5 193.04 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "07172537-4d7a-5f63-9c9e-e95809d1b036") (property "Reference" "C13" (at 190.5 189.23 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 190.5 196.85 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 190.5 193.04 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 190.5 193.04 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 190.5 193.04 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "cd1ba20f-92db-5785-9454-5e89ee03e861")) (pin "2" (uuid "93ff5245-24fb-5961-9aa8-ddfe3ff73047")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C13") (unit 1)))))
+(wire (pts (xy 186.69 193.04) (xy 184.15 193.04)) (stroke (width 0) (type default)) (uuid "a22aa399-439f-5109-ba51-cb533fbdc220"))
+(label "AC1" (at 184.15 193.04 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a9ebd9fc-6ffd-586f-937d-ddc4c8629c17"))
+(wire (pts (xy 194.31 193.04) (xy 196.85 193.04)) (stroke (width 0) (type default)) (uuid "1cd9019f-5687-5b85-9d56-ca3af2f9f79c"))
+(label "AC2" (at 196.85 193.04 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "12d68458-773a-5930-ae5a-e24c9928495a"))
+(symbol (lib_id "Device:C") (at 190.5 205.74 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "2b1dfb01-15af-5920-aa3e-bbc12c5e04c0") (property "Reference" "C14" (at 190.5 201.93 90) (effects (font (size 1.27 1.27))))(property "Value" "DNP" (at 190.5 209.55 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 190.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 190.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 190.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "bee32c15-fa28-5324-93d9-d830d070fae9")) (pin "2" (uuid "ae5e751f-4b8e-518a-932f-6c34c1622a44")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "C14") (unit 1)))))
+(wire (pts (xy 186.69 205.74) (xy 184.15 205.74)) (stroke (width 0) (type default)) (uuid "6cbeee14-6b37-533d-a231-5024afe9db21"))
+(label "AC1" (at 184.15 205.74 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f8a4651f-f349-5edd-b3d6-6de15da5e566"))
+(wire (pts (xy 194.31 205.74) (xy 196.85 205.74)) (stroke (width 0) (type default)) (uuid "918dbf91-5e76-5039-ac0c-69cb318a6ed8"))
+(label "AC2" (at 196.85 205.74 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "963edcde-127c-5773-92d7-3f6171ca2d2e"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 243.84 195.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5a2d979c-310b-5cb7-96e3-2277c243a114") (property "Reference" "JP5" (at 243.84 191.77 0) (effects (font (size 1.27 1.27))))(property "Value" "CE_AC1 SRC" (at 243.84 189.23 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 243.84 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 243.84 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 243.84 195.58 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c442f9ef-6107-5891-8f07-c0f956cb9a78")) (pin "2" (uuid "a7110a9a-bf51-517b-8b6e-b490eab45cd6")) (pin "3" (uuid "36120f82-44f0-5b3f-a049-0e58c2d9b6b3")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP5") (unit 1)))))
+(wire (pts (xy 238.76 195.58) (xy 236.22 195.58)) (stroke (width 0) (type default)) (uuid "b2e7d6e4-d0a1-5dff-a0f6-d470ba2b0a4e"))
+(label "AC1" (at 236.22 195.58 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "361780d9-4b87-5174-9665-51a76e97d402"))
+(wire (pts (xy 243.84 199.39) (xy 243.84 201.93)) (stroke (width 0) (type default)) (uuid "f187c1d7-5633-538f-a193-c4f67a422893"))
+(label "CE_AC1" (at 243.84 201.93 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4261ca32-f772-559f-a8a7-0730c567c158"))
+(wire (pts (xy 248.92 195.58) (xy 251.46 195.58)) (stroke (width 0) (type default)) (uuid "ab341b04-6578-5239-a7a5-31529b78c48d"))
+(label "GND" (at 251.46 195.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "00a561c7-82cd-5c90-a753-41703b34b7cb"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 243.84 220.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1692aafe-0024-5385-8a3e-7e300a3c527b") (property "Reference" "JP6" (at 243.84 217.17 0) (effects (font (size 1.27 1.27))))(property "Value" "CE_AC2 SRC" (at 243.84 214.63 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 243.84 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 243.84 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 243.84 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "50fc3eca-0d16-532a-aa41-852084dfcbc0")) (pin "2" (uuid "90ad6f9d-7993-502d-8130-16655477b143")) (pin "3" (uuid "1ad19daf-3d77-577d-a392-e1aaac0ab3fa")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP6") (unit 1)))))
+(wire (pts (xy 238.76 220.98) (xy 236.22 220.98)) (stroke (width 0) (type default)) (uuid "545735c1-dae5-5f36-94f8-2c820f78e4bb"))
+(label "AC2" (at 236.22 220.98 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b596eb64-2c6c-54d8-9be2-8d020a003f1d"))
+(wire (pts (xy 243.84 224.79) (xy 243.84 227.33)) (stroke (width 0) (type default)) (uuid "5c2ed7f2-4f2a-593c-8993-13d2e013c7e5"))
+(label "CE_AC2" (at 243.84 227.33 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ddad1236-3aac-512d-94d0-1512429bbf98"))
+(wire (pts (xy 248.92 220.98) (xy 251.46 220.98)) (stroke (width 0) (type default)) (uuid "d523c4ce-2853-55d9-8024-20211d959c31"))
+(label "GND" (at 251.46 220.98 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9751023e-4674-5383-940c-0abd93b810ac"))
+(symbol (lib_id "Connector:Conn_Coaxial") (at 172.72 218.44 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "cc3e1b30-90dc-5bf0-bbae-d5bad8fb6fd0") (property "Reference" "J5" (at 172.72 214.63 0) (effects (font (size 1.27 1.27))))(property "Value" "CE_AC1 IN" (at 182.245 219.075 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134_Vertical" (at 172.72 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 172.72 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 172.72 218.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1b293e1e-f5f8-5df3-9e65-d2ab7b9776a2")) (pin "2" (uuid "8762d9bb-0270-5f02-8350-8a1e06a57738")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J5") (unit 1)))))
+(wire (pts (xy 167.64 218.44) (xy 165.1 218.44)) (stroke (width 0) (type default)) (uuid "7215ac85-6b81-53c0-a248-5bee3c44354f"))
+(label "CE_AC1" (at 165.1 218.44 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1e570cac-0e6e-5f8f-84f1-8a0c72a7aeb5"))
+(wire (pts (xy 172.72 223.52) (xy 172.72 226.06)) (stroke (width 0) (type default)) (uuid "a8234198-3fcc-552c-b8a1-0adf4a4cf5f5"))
+(label "GND" (at 172.72 226.06 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "42d45be9-187e-566f-89ba-d0ad920cebb9"))
+(symbol (lib_id "Connector:Conn_Coaxial") (at 205.74 218.44 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1cb0f694-8a93-57c5-9d5d-4a4a91be8930") (property "Reference" "J6" (at 205.74 214.63 0) (effects (font (size 1.27 1.27))))(property "Value" "CE_AC2 IN" (at 215.265 219.075 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134_Vertical" (at 205.74 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 205.74 218.44 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 205.74 218.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "4d88f4ac-9f01-54bf-8988-c92059699e96")) (pin "2" (uuid "3e1833f2-26aa-5de0-9a8d-d6b592e0a8de")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J6") (unit 1)))))
+(wire (pts (xy 200.66 218.44) (xy 198.12 218.44)) (stroke (width 0) (type default)) (uuid "a042b033-3576-5097-b9d1-aab3dd145ba3"))
+(label "CE_AC2" (at 198.12 218.44 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "aedbc789-c081-599b-ba69-acbc928e1a12"))
+(wire (pts (xy 205.74 223.52) (xy 205.74 226.06)) (stroke (width 0) (type default)) (uuid "aeba1336-8886-5cbd-b4ed-9248ab75b6d2"))
+(label "GND" (at 205.74 226.06 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d17b7ee0-01dd-5692-aa3b-00895466d29b"))
+(symbol (lib_id "Connector_Generic:Conn_02x06_Odd_Even") (at 330.2 38.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4e71e69a-bca2-5d10-8751-058b4ac32a73") (property "Reference" "J2" (at 330.2 30.48 0) (effects (font (size 1.27 1.27))))(property "Value" "ESP32-C3 JIG" (at 330.2 48.26 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (at 330.2 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 330.2 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 330.2 38.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c7b34c3e-6a01-5b74-947a-78c698b30d2e")) (pin "2" (uuid "3610c695-f949-5920-aa49-fde3a2ff5224")) (pin "3" (uuid "ac1d646e-d30c-5966-92ff-ca64c671b6dd")) (pin "4" (uuid "12ae0096-8c8b-562c-8956-b650fe1d3bb0")) (pin "5" (uuid "18677b0c-02d8-57f6-baf3-1d79f5ae620a")) (pin "6" (uuid "ba168fc3-2c18-558c-b5a0-b25fb02522ae")) (pin "7" (uuid "de4f90e1-0027-58fd-94e7-e8fade2690f9")) (pin "8" (uuid "cbba2e15-a995-53aa-bb4b-72f9be935cbf")) (pin "9" (uuid "d3fd5f93-fdb1-515c-ac24-929b86f90150")) (pin "10" (uuid "8d0c7ba1-578e-5928-a075-1cede353dd88")) (pin "11" (uuid "885c5b3c-21eb-582d-81e9-eb4d11d65d98")) (pin "12" (uuid "bd244d9b-32e5-588f-b133-a8aec479a500")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J2") (unit 1)))))
+(wire (pts (xy 325.12 33.02) (xy 322.58 33.02)) (stroke (width 0) (type default)) (uuid "c03390dd-bd6f-5c91-ba8a-87d628e27a95"))
+(label "JIG_CLK" (at 322.58 33.02 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4bf5cdf1-b4d9-5467-8c18-6962e2173f8b"))
+(wire (pts (xy 337.82 33.02) (xy 340.36 33.02)) (stroke (width 0) (type default)) (uuid "934c6d97-a8b4-5721-bfa6-dda085567e42"))
+(label "GND" (at 340.36 33.02 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a6bd6343-f0a9-5538-bd65-0b5f4d6ed85f"))
+(wire (pts (xy 325.12 35.56) (xy 322.58 35.56)) (stroke (width 0) (type default)) (uuid "c1d8ed2f-6188-5944-b651-c55599fcd913"))
+(label "JIG_RESET_N" (at 322.58 35.56 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "eb4c5bab-ae0a-5d19-b71a-3bb010e7a2ef"))
+(wire (pts (xy 337.82 35.56) (xy 340.36 35.56)) (stroke (width 0) (type default)) (uuid "e2a4043b-56c6-523c-823c-b5b2428ad264"))
+(label "GND" (at 340.36 35.56 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "425cf229-5691-5ac8-81bb-895e41dd341d"))
+(wire (pts (xy 325.12 38.1) (xy 322.58 38.1)) (stroke (width 0) (type default)) (uuid "b30f8506-08f2-5ef8-955f-61519e533a46"))
+(label "JIG_POWER" (at 322.58 38.1 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "aa77290b-86a0-58ec-967d-c9ab3fc3791c"))
+(wire (pts (xy 337.82 38.1) (xy 340.36 38.1)) (stroke (width 0) (type default)) (uuid "37782c52-9b77-5320-b431-e2238bcb68bd"))
+(label "GND" (at 340.36 38.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "68dc9560-0cdb-5f76-bab2-9c0f399f6be7"))
+(wire (pts (xy 325.12 40.64) (xy 322.58 40.64)) (stroke (width 0) (type default)) (uuid "59ebc6b5-c447-566c-a294-0f6a327a01f0"))
+(label "JIG_SCK" (at 322.58 40.64 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6934a8db-8960-5856-aea1-1bcc44f011ab"))
+(wire (pts (xy 337.82 40.64) (xy 340.36 40.64)) (stroke (width 0) (type default)) (uuid "39c02410-2b24-5c4d-935a-1d1aa7fd96f6"))
+(label "JIG_CS_N" (at 340.36 40.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "df1d37f5-eab4-5808-a4c5-88ba6cf04630"))
+(wire (pts (xy 325.12 43.18) (xy 322.58 43.18)) (stroke (width 0) (type default)) (uuid "ecfa93db-fd92-5acf-bfa4-ac7c473aa4d8"))
+(label "JIG_MOSI" (at 322.58 43.18 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d6f2efcf-9500-5d79-a0ed-7a3d2ac63335"))
+(wire (pts (xy 337.82 43.18) (xy 340.36 43.18)) (stroke (width 0) (type default)) (uuid "9117e76b-c41d-581e-bcaa-b7da91ef589a"))
+(label "JIG_MISO" (at 340.36 43.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5671e063-04ab-5d39-9c89-f113e7258e85"))
+(wire (pts (xy 325.12 45.72) (xy 322.58 45.72)) (stroke (width 0) (type default)) (uuid "68736085-0430-5c70-8643-547d74df1c43"))
+(label "JIG_MOD" (at 322.58 45.72 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "73b0ab15-08e4-54a4-ac5f-c6990687a96d"))
+(wire (pts (xy 337.82 45.72) (xy 340.36 45.72)) (stroke (width 0) (type default)) (uuid "0c21ef3f-6aef-545d-9572-1b39e2863e8a"))
+(label "GND" (at 340.36 45.72 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "14e244cd-1626-59fd-ac0c-649812f2cf2e"))
+(symbol (lib_id "Device:R") (at 375.92 25.4 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "744ca6d1-e335-5a0d-ad70-c64e79f826e5") (property "Reference" "R1" (at 375.92 22.86 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 27.94 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 25.4 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 25.4 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 25.4 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "524a9fc2-585c-5977-aab9-ed793f5572cc")) (pin "2" (uuid "0eecb05b-135e-5254-9c71-ba4ce84c4b36")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R1") (unit 1)))))
+(wire (pts (xy 372.11 25.4) (xy 369.57 25.4)) (stroke (width 0) (type default)) (uuid "848156b7-cc91-5f40-8582-16ea3de71745"))
+(label "JIG_CLK" (at 369.57 25.4 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1c1b0085-cd6b-5ff2-a466-e69780e64456"))
+(wire (pts (xy 379.73 25.4) (xy 382.27 25.4)) (stroke (width 0) (type default)) (uuid "ed4c2b86-4403-50cf-a142-ff000519cb3e"))
+(label "CLK_SEL" (at 382.27 25.4 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3d939ef4-ef71-5d78-8e60-76661484f950"))
+(symbol (lib_id "Device:R") (at 375.92 33.02 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a45dae75-f5e2-5e0e-b957-8c39a1afb654") (property "Reference" "R2" (at 375.92 30.48 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 35.56 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 33.02 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 33.02 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 33.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7ed00158-3351-5ef7-bad3-9af04d399d78")) (pin "2" (uuid "02b6424a-09b4-5caf-8b2b-d9239e145d2b")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R2") (unit 1)))))
+(wire (pts (xy 372.11 33.02) (xy 369.57 33.02)) (stroke (width 0) (type default)) (uuid "45f5efe4-321b-5386-94d9-57ff97c2e958"))
+(label "JIG_RESET_N" (at 369.57 33.02 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e7499c86-7c61-5790-b90c-abd2c250158c"))
+(wire (pts (xy 379.73 33.02) (xy 382.27 33.02)) (stroke (width 0) (type default)) (uuid "65acb47b-52f4-536f-b61c-7c9b1459a00c"))
+(label "RESET_SEL" (at 382.27 33.02 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "33d29f5f-7d6f-516a-a5a5-f7b0841a022f"))
+(symbol (lib_id "Device:R") (at 375.92 40.64 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d746dbb6-81b4-5de6-a718-d4573ff18e8a") (property "Reference" "R3" (at 375.92 38.1 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 43.18 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 40.64 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a35ebe31-05d6-54e5-90bb-391144021ae8")) (pin "2" (uuid "be5da371-d516-5e4e-9d03-b37a993dc801")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R3") (unit 1)))))
+(wire (pts (xy 372.11 40.64) (xy 369.57 40.64)) (stroke (width 0) (type default)) (uuid "7c07e279-cf26-5f16-8f91-ee207e59480c"))
+(label "JIG_POWER" (at 369.57 40.64 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fc8abb7d-8fec-5e54-a4ba-30e0dbe06bab"))
+(wire (pts (xy 379.73 40.64) (xy 382.27 40.64)) (stroke (width 0) (type default)) (uuid "6740e37e-7c4a-5fc4-b1b3-55035b855684"))
+(label "POWER_SEL" (at 382.27 40.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c89ec526-3520-584b-be3f-8335e570f4ea"))
+(symbol (lib_id "Device:R") (at 375.92 48.26 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f6a085a3-7ea6-5127-9525-fa749c9f946c") (property "Reference" "R4" (at 375.92 45.72 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 50.8 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "681a265a-bc89-5a3d-9750-c4cbfb957b3f")) (pin "2" (uuid "50d180fc-4d2d-5849-8780-57497d680337")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R4") (unit 1)))))
+(wire (pts (xy 372.11 48.26) (xy 369.57 48.26)) (stroke (width 0) (type default)) (uuid "e958f040-05a7-506b-95e6-d4c6277c8ceb"))
+(label "JIG_SCK" (at 369.57 48.26 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4ab09761-f707-532b-82a1-da0feae8aea5"))
+(wire (pts (xy 379.73 48.26) (xy 382.27 48.26)) (stroke (width 0) (type default)) (uuid "f6ca7f46-7f0c-510b-ba5d-d99e4a91221b"))
+(label "SPI_SCK" (at 382.27 48.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ef1757c8-5dda-5eda-b3a0-de05f11c3059"))
+(symbol (lib_id "Device:R") (at 375.92 55.88 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c4a64ec2-8a76-5154-babb-c40143a41d07") (property "Reference" "R5" (at 375.92 53.34 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 58.42 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ce090bfe-3a78-5ae9-984e-b644d163e522")) (pin "2" (uuid "d82b9a89-419e-5eef-93b7-de4d23e3f3d6")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R5") (unit 1)))))
+(wire (pts (xy 372.11 55.88) (xy 369.57 55.88)) (stroke (width 0) (type default)) (uuid "1b13e55d-bb27-5b49-9c84-0c557ac4ed91"))
+(label "JIG_CS_N" (at 369.57 55.88 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "92f8b065-838c-50cc-b290-1e08d857a8c5"))
+(wire (pts (xy 379.73 55.88) (xy 382.27 55.88)) (stroke (width 0) (type default)) (uuid "5c3fc93c-8602-5ce6-9746-361feb165d76"))
+(label "SPI_CS_N" (at 382.27 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fb9aa4f2-09a1-5755-947a-dbf53a18552e"))
+(symbol (lib_id "Device:R") (at 375.92 63.5 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d64c6867-df6b-556e-b14b-3509420d3f1a") (property "Reference" "R6" (at 375.92 60.96 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 66.04 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "fbe08ea7-9bcd-581c-97cd-d5af84b30a69")) (pin "2" (uuid "396f4131-7048-5d13-8948-66b231b8f575")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R6") (unit 1)))))
+(wire (pts (xy 372.11 63.5) (xy 369.57 63.5)) (stroke (width 0) (type default)) (uuid "458223a3-d6fc-5945-b2c4-c900b5eb3fc8"))
+(label "JIG_MOSI" (at 369.57 63.5 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "642083d0-3872-5f33-98f3-254e4317ceaa"))
+(wire (pts (xy 379.73 63.5) (xy 382.27 63.5)) (stroke (width 0) (type default)) (uuid "1cee8951-562a-5fe9-8e99-0abe9cb0f9f7"))
+(label "SPI_MOSI" (at 382.27 63.5 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0a5136ab-dbc0-59d3-93c9-51bcccea97aa"))
+(symbol (lib_id "Device:R") (at 375.92 71.12 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "14c72241-ab62-5de9-a646-9f8c84125a72") (property "Reference" "R7" (at 375.92 68.58 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 73.66 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 71.12 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b95cbae1-0671-52ae-9da7-16cd99a5c2b9")) (pin "2" (uuid "77c00e30-f071-59e7-bfac-9cfd0e32fbe4")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R7") (unit 1)))))
+(wire (pts (xy 372.11 71.12) (xy 369.57 71.12)) (stroke (width 0) (type default)) (uuid "fc09fd4f-e9d8-51ff-bb9b-ed1ea1b51be7"))
+(label "SPI_MISO" (at 369.57 71.12 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4abf9367-a259-5090-92a1-2a0bdfc81bb7"))
+(wire (pts (xy 379.73 71.12) (xy 382.27 71.12)) (stroke (width 0) (type default)) (uuid "8ae5cb37-b6b3-5a50-bcb8-f3eaca9a6a0f"))
+(label "JIG_MISO" (at 382.27 71.12 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f401007b-ec49-5d90-869c-0063f1359f34"))
+(symbol (lib_id "Device:R") (at 375.92 78.74 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f9d3d276-da4b-53b8-b43f-75bacbc283da") (property "Reference" "R8" (at 375.92 76.2 90) (effects (font (size 1.27 1.27))))(property "Value" "33" (at 375.92 81.28 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 78.74 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7199413f-53ae-522c-a2f4-31a39f4e0204")) (pin "2" (uuid "662c1eea-3578-54b3-987a-67fdd16de709")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R8") (unit 1)))))
+(wire (pts (xy 372.11 78.74) (xy 369.57 78.74)) (stroke (width 0) (type default)) (uuid "dd625e17-a66b-567c-acf2-08ad44c4f74a"))
+(label "MODULATED_BIT_OUT" (at 369.57 78.74 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d1108a2f-da8c-5bed-b8f1-1c8095de3ed4"))
+(wire (pts (xy 379.73 78.74) (xy 382.27 78.74)) (stroke (width 0) (type default)) (uuid "888fd9ee-0b52-5a29-81fd-b68e65bd7a9c"))
+(label "JIG_MOD" (at 382.27 78.74 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2997b5c1-fbca-5446-b16a-80033f916f68"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 309.88 116.84 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a8d0f8bf-5b08-5b21-984f-b4cb3dcbd1ea") (property "Reference" "JP1" (at 309.88 113.03 0) (effects (font (size 1.27 1.27))))(property "Value" "CLK_IN SRC" (at 309.88 110.49 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 309.88 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 309.88 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7ca74a55-bdbc-5017-b3af-4044bf8e23b1")) (pin "2" (uuid "e1f94458-623b-5646-a88d-65579ce69f00")) (pin "3" (uuid "755e3873-d307-52d2-9d37-feb244a49363")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP1") (unit 1)))))
+(wire (pts (xy 304.8 116.84) (xy 302.26 116.84)) (stroke (width 0) (type default)) (uuid "33b9ad39-530b-5753-b457-0bc23bbcacd0"))
+(label "CLK_OUT" (at 302.26 116.84 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "97899f90-908a-5605-870d-a6c883a51c00"))
+(wire (pts (xy 309.88 120.65) (xy 309.88 123.19)) (stroke (width 0) (type default)) (uuid "4b193beb-1ac4-5168-b828-cbb2651b876c"))
+(label "CLK_IN" (at 309.88 123.19 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a0a85f9d-da85-55ec-a4ba-22be66aae839"))
+(wire (pts (xy 314.96 116.84) (xy 317.5 116.84)) (stroke (width 0) (type default)) (uuid "ecf6b0e1-f899-5e55-9444-73472591c4d8"))
+(label "CLK_SEL" (at 317.5 116.84 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9c31cc5c-a28f-5be0-b585-466f8088aa15"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 309.88 142.24 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "09b5e52f-d7f2-5723-a9e4-cc042cdb939f") (property "Reference" "JP2" (at 309.88 138.43 0) (effects (font (size 1.27 1.27))))(property "Value" "RESET_N SRC" (at 309.88 135.89 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 309.88 142.24 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 142.24 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 309.88 142.24 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "046f7307-6bf4-5186-bf13-4be217a41ca7")) (pin "2" (uuid "53cf7a3d-6732-566b-9d57-d5a7314aa055")) (pin "3" (uuid "7fcc5d74-39b0-56b4-ad84-45eef7572749")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP2") (unit 1)))))
+(wire (pts (xy 304.8 142.24) (xy 302.26 142.24)) (stroke (width 0) (type default)) (uuid "1573adfc-ddb0-5374-b8f4-1e6ae1311e7b"))
+(label "RESET_N_OUT" (at 302.26 142.24 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "31b9024a-534b-5b55-b6b1-cbe4ebad43a4"))
+(wire (pts (xy 309.88 146.05) (xy 309.88 148.59)) (stroke (width 0) (type default)) (uuid "215870ef-59b8-50da-a0ff-e4d1bb9d924a"))
+(label "RESET_N_IN" (at 309.88 148.59 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0307e6cb-e629-5f13-a641-757b0d5ae026"))
+(wire (pts (xy 314.96 142.24) (xy 317.5 142.24)) (stroke (width 0) (type default)) (uuid "6f48a0a1-9503-5a55-b574-b019282558e4"))
+(label "RESET_SEL" (at 317.5 142.24 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8a3c4a6c-3ace-5407-aadc-b0390b5ec5ff"))
+(symbol (lib_id "Jumper:Jumper_3_Open") (at 309.88 167.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "07420eb8-bc8f-5ce4-b987-ea75e0a79db6") (property "Reference" "JP3" (at 309.88 163.83 0) (effects (font (size 1.27 1.27))))(property "Value" "POWER SRC" (at 309.88 161.29 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 309.88 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 167.64 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 309.88 167.64 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e9d87703-ed5f-5b1e-820a-cb2f13f5a7c3")) (pin "2" (uuid "3ac66dcc-eab2-5273-b9a0-cb6b6b0b590f")) (pin "3" (uuid "9966ff48-1edd-568d-9fb3-0e9a862999ca")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP3") (unit 1)))))
+(wire (pts (xy 304.8 167.64) (xy 302.26 167.64)) (stroke (width 0) (type default)) (uuid "7474f6e6-ed80-5588-b96d-76ecb12fdabd"))
+(label "POWER_STABLE_OUT" (at 302.26 167.64 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "27caf883-4c57-59e0-bad7-8e660bc92886"))
+(wire (pts (xy 309.88 171.45) (xy 309.88 173.99)) (stroke (width 0) (type default)) (uuid "c3ad7c61-c732-54a3-bf8f-d4fd40e512de"))
+(label "POWER_STABLE_IN" (at 309.88 173.99 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4c84a5f3-44f0-5880-a00b-9bad147761da"))
+(wire (pts (xy 314.96 167.64) (xy 317.5 167.64)) (stroke (width 0) (type default)) (uuid "f39ef0b1-a06b-5a2a-9a3e-781cc72f9080"))
+(label "POWER_SEL" (at 317.5 167.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1047f376-fabd-543b-929d-8512bc85741b"))
+(symbol (lib_id "Jumper:Jumper_2_Open") (at 360.68 116.84 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "13416a08-384c-5b20-8d0a-727c0b443a8d") (property "Reference" "JP4" (at 360.68 113.03 0) (effects (font (size 1.27 1.27))))(property "Value" "MOD LOOP" (at 360.68 110.49 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 360.68 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 360.68 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 360.68 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d41ebddf-2f3c-501c-8a09-8d2a7ca9558e")) (pin "2" (uuid "71f42795-a9f2-522f-9dba-c5449feb0232")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "JP4") (unit 1)))))
+(wire (pts (xy 355.6 116.84) (xy 353.06 116.84)) (stroke (width 0) (type default)) (uuid "035f6f34-ec00-51a3-b5c5-88cd0f4a236c"))
+(label "MODULATED_BIT_OUT" (at 353.06 116.84 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2e0b1ba8-d4f9-5b16-b41c-c16f6a9cd9d7"))
+(wire (pts (xy 365.76 116.84) (xy 368.3 116.84)) (stroke (width 0) (type default)) (uuid "a2d93537-c853-5f06-81ed-b85640950f85"))
+(label "MODULATED_BIT_IN" (at 368.3 116.84 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fb0ff4ea-b906-5575-812e-8d0f1775396d"))
+(symbol (lib_id "Connector:Conn_Coaxial") (at 370.84 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "20753f92-6d36-5545-a382-3b2983365e15") (property "Reference" "J7" (at 370.84 128.27 0) (effects (font (size 1.27 1.27))))(property "Value" "CLK IN" (at 380.365 132.715 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134_Vertical" (at 370.84 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 370.84 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 370.84 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8302c5b0-c8f8-5432-b225-db7f44334133")) (pin "2" (uuid "2d543fc5-728b-5fb4-9565-cd31830f986e")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "J7") (unit 1)))))
+(wire (pts (xy 365.76 132.08) (xy 363.22 132.08)) (stroke (width 0) (type default)) (uuid "eb7ac510-1f7e-5801-b624-4eb0cd55143f"))
+(label "CLK_SEL" (at 363.22 132.08 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3e39ea16-2957-591a-b3dc-c576dccf5011"))
+(wire (pts (xy 370.84 137.16) (xy 370.84 139.7)) (stroke (width 0) (type default)) (uuid "49cccd17-b4d7-5fa6-b218-61499d5dbfd8"))
+(label "GND" (at 370.84 139.7 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b86cb17c-f36b-5251-89a2-5b60635fbccd"))
+(symbol (lib_id "Device:R") (at 375.92 147.32 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "71c53d2a-5e7b-5f09-a36c-59f6eff2214b") (property "Reference" "R9" (at 375.92 144.78 90) (effects (font (size 1.27 1.27))))(property "Value" "2k2" (at 375.92 149.86 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 147.32 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 147.32 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a4de3f88-19c9-56e9-b629-87c16e880dff")) (pin "2" (uuid "d98396ba-7825-5869-ab65-954402651a2a")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R9") (unit 1)))))
+(wire (pts (xy 372.11 147.32) (xy 369.57 147.32)) (stroke (width 0) (type default)) (uuid "4ace9a60-6bc6-523e-9eb0-1fe5e8ce8f5a"))
+(label "SPI_MISO" (at 369.57 147.32 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0e2cff30-5a1f-5b3a-b232-c2d45a07fa7b"))
+(wire (pts (xy 379.73 147.32) (xy 382.27 147.32)) (stroke (width 0) (type default)) (uuid "08b91042-6d1a-53a6-a77e-5b8b46ca2f2f"))
+(label "GND" (at 382.27 147.32 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "40f13e40-56c1-5ed1-ac4b-55e0b6f3393c"))
+(symbol (lib_id "Device:R") (at 375.92 154.94 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6f966df7-0e54-5685-9d7d-d2bcd03fc55c") (property "Reference" "R10" (at 375.92 152.4 90) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 375.92 157.48 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 154.94 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7d504354-60cc-5c48-a1f8-a639e76456ce")) (pin "2" (uuid "0b6ec9bd-956a-5720-8595-78f3d7a36168")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R10") (unit 1)))))
+(wire (pts (xy 372.11 154.94) (xy 369.57 154.94)) (stroke (width 0) (type default)) (uuid "3b315151-19d7-53db-a264-3a6fea6668d8"))
+(label "IOVDD" (at 369.57 154.94 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5afd84aa-fa26-5ff3-9ed7-66b0ae91efe8"))
+(wire (pts (xy 379.73 154.94) (xy 382.27 154.94)) (stroke (width 0) (type default)) (uuid "a64153cc-838e-5f2f-b702-e8fef328997c"))
+(label "SPI_CS_N" (at 382.27 154.94 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cf5acb2e-3c21-5de2-b5a3-1687e176e994"))
+(symbol (lib_id "Device:R") (at 375.92 162.56 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73fba1a4-9ebb-56f1-a784-a7b815c3ea5e") (property "Reference" "R11" (at 375.92 160.02 90) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 375.92 165.1 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 162.56 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f99c1713-b84d-51fc-88f8-2e5eaaf4e459")) (pin "2" (uuid "4d4aa6c4-a11a-59d1-8b88-d54232e83bfd")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R11") (unit 1)))))
+(wire (pts (xy 372.11 162.56) (xy 369.57 162.56)) (stroke (width 0) (type default)) (uuid "8a1c9afd-c6ea-5146-8e27-1feb9739416a"))
+(label "CLK_IN" (at 369.57 162.56 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2141e274-7c3d-57b0-ae42-55a6e3e7bce0"))
+(wire (pts (xy 379.73 162.56) (xy 382.27 162.56)) (stroke (width 0) (type default)) (uuid "653ac14d-fc20-558a-a951-6a46263f387c"))
+(label "GND" (at 382.27 162.56 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "97077ffc-5422-50fe-9a4f-1a36d7c8bc7a"))
+(symbol (lib_id "Device:R") (at 375.92 170.18 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3299e2bf-e22c-5d05-8cdc-66955d3ce4af") (property "Reference" "R12" (at 375.92 167.64 90) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 375.92 172.72 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 170.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "24889218-daef-5534-bc00-d56a05046a91")) (pin "2" (uuid "493eefd8-aee7-5907-9aad-81b98d1de4a3")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R12") (unit 1)))))
+(wire (pts (xy 372.11 170.18) (xy 369.57 170.18)) (stroke (width 0) (type default)) (uuid "ca48bc0f-f642-51c3-8a51-c002f6554047"))
+(label "RESET_N_IN" (at 369.57 170.18 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d3b76b15-6f94-5dfc-a500-f8fb540e07e8"))
+(wire (pts (xy 379.73 170.18) (xy 382.27 170.18)) (stroke (width 0) (type default)) (uuid "116f9fa6-1098-5613-b8ab-6e58a73342f7"))
+(label "GND" (at 382.27 170.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c387b3c3-72d3-5b7e-80e8-150511dc255a"))
+(symbol (lib_id "Device:R") (at 375.92 177.8 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "51e13797-8636-59d4-9ca1-cb163c39c81a") (property "Reference" "R13" (at 375.92 175.26 90) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 375.92 180.34 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 177.8 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 177.8 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 177.8 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "58a56970-a60f-5fc5-9120-526b1df99836")) (pin "2" (uuid "c2ef40ef-9931-55a7-a52d-0009681657e5")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R13") (unit 1)))))
+(wire (pts (xy 372.11 177.8) (xy 369.57 177.8)) (stroke (width 0) (type default)) (uuid "cc9d1496-6bc2-5b3d-b71a-c97eae0d3867"))
+(label "POWER_STABLE_IN" (at 369.57 177.8 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a482bd07-9243-54fa-8f9d-bc6c36f7ed87"))
+(wire (pts (xy 379.73 177.8) (xy 382.27 177.8)) (stroke (width 0) (type default)) (uuid "5c273df2-d92c-55fa-8dd3-d45c96b03709"))
+(label "GND" (at 382.27 177.8 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cf3bf9bf-48d7-5d29-9ba3-df2f0131a456"))
+(symbol (lib_id "Device:R") (at 375.92 185.42 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c31833e4-d3be-5bba-8d91-a5a654bff054") (property "Reference" "R14" (at 375.92 182.88 90) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 375.92 187.96 90) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 375.92 185.42 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 375.92 185.42 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 375.92 185.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "242ea29a-a843-57cf-a394-521b1225abf9")) (pin "2" (uuid "f7bb09df-d061-5603-9482-3924efc5e03a")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "R14") (unit 1)))))
+(wire (pts (xy 372.11 185.42) (xy 369.57 185.42)) (stroke (width 0) (type default)) (uuid "fd743ea5-a26e-57fb-9c0a-b39d1bc00ec3"))
+(label "IOVDD" (at 369.57 185.42 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4131d064-504e-50c0-8a74-3322c68fa130"))
+(wire (pts (xy 379.73 185.42) (xy 382.27 185.42)) (stroke (width 0) (type default)) (uuid "da3227c7-74f9-5ffa-b4f7-9410c14eccbc"))
+(label "MODULATED_BIT_IN" (at 382.27 185.42 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "38c97305-d233-5643-842b-9ff856f98003"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 210.82 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0e6cede7-59ca-5528-be64-63974de2755f") (property "Reference" "TP1" (at 289.56 211.455 90) (effects (font (size 1.27 1.27))))(property "Value" "IOVDD" (at 297.18 210.82 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "4f156e88-a4b7-5c11-8292-16a383c10409")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP1") (unit 1)))))
+(wire (pts (xy 297.18 210.82) (xy 299.72 210.82)) (stroke (width 0) (type default)) (uuid "3794f81a-a927-5da4-8d1b-7df4cb46755f"))
+(label "IOVDD" (at 299.72 210.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f0cc9be9-3c85-5852-9ba9-30921be4032b"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 215.9 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "580c594b-f9b5-5688-b693-8f21d6a61c3e") (property "Reference" "TP2" (at 289.56 216.535 90) (effects (font (size 1.27 1.27))))(property "Value" "DVDD" (at 297.18 215.9 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 215.9 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a1e02598-613c-5fab-b8b5-8c242a794299")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP2") (unit 1)))))
+(wire (pts (xy 297.18 215.9) (xy 299.72 215.9)) (stroke (width 0) (type default)) (uuid "138875fb-c49c-5b0a-8379-8cca07448c35"))
+(label "DVDD" (at 299.72 215.9 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6516b229-749b-59db-a272-59c5e837f7bf"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 220.98 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "cfce9921-a778-5111-adb8-3689e64f8ed0") (property "Reference" "TP3" (at 289.56 221.615 90) (effects (font (size 1.27 1.27))))(property "Value" "AVDD" (at 297.18 220.98 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "668a3757-6fff-5ea4-91a5-7c24ffb74fcc")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP3") (unit 1)))))
+(wire (pts (xy 297.18 220.98) (xy 299.72 220.98)) (stroke (width 0) (type default)) (uuid "0654d3af-3c63-5538-85e0-2af6b9f9b92e"))
+(label "AVDD" (at 299.72 220.98 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "634f516d-2266-58ab-919a-bfaea2d4e3bc"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 226.06 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ef0a3c6e-b905-5689-bb15-a2ede274c6a5") (property "Reference" "TP4" (at 289.56 226.695 90) (effects (font (size 1.27 1.27))))(property "Value" "V_RECT" (at 297.18 226.06 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d5556cf6-4f0e-5d1d-9bec-d4a9e1c250b3")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP4") (unit 1)))))
+(wire (pts (xy 297.18 226.06) (xy 299.72 226.06)) (stroke (width 0) (type default)) (uuid "011d887c-a70c-5ea1-b2cc-c5c0087c64ee"))
+(label "V_RECT" (at 299.72 226.06 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a00a42b3-ed57-5e94-b1d6-11773065e59e"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 231.14 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6113bff4-329e-5f7b-b559-3b2b53826540") (property "Reference" "TP5" (at 289.56 231.775 90) (effects (font (size 1.27 1.27))))(property "Value" "LDO1_OUT" (at 297.18 231.14 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 231.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2ff66e89-c32a-502d-8f58-38bd8a3ec505")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP5") (unit 1)))))
+(wire (pts (xy 297.18 231.14) (xy 299.72 231.14)) (stroke (width 0) (type default)) (uuid "e4b7ed38-eee1-56c8-b764-57dc67a19eda"))
+(label "LDO1_OUT" (at 299.72 231.14 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5dcf5dd1-edae-5ae7-99c5-4f1766323dd1"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 236.22 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b3aff965-7035-5af4-8f3a-d20ff63782d3") (property "Reference" "TP6" (at 289.56 236.855 90) (effects (font (size 1.27 1.27))))(property "Value" "LDO1_VREF" (at 297.18 236.22 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0bfbd31b-f598-5ecd-aaba-0bc9f1a3172c")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP6") (unit 1)))))
+(wire (pts (xy 297.18 236.22) (xy 299.72 236.22)) (stroke (width 0) (type default)) (uuid "4ed1bea9-7d88-5cbe-8837-b95e8129edeb"))
+(label "LDO1_VREF" (at 299.72 236.22 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4b1417a6-fb90-5424-ba08-dec3407a30a1"))
+(symbol (lib_id "Connector:TestPoint") (at 297.18 241.3 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1d02e0e8-a56d-5e40-ad0b-758405b1c2a7") (property "Reference" "TP7" (at 289.56 241.935 90) (effects (font (size 1.27 1.27))))(property "Value" "LDO2_OUT" (at 297.18 241.3 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 297.18 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 297.18 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 297.18 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "329d21ad-9950-53bb-a0c1-d27437108351")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP7") (unit 1)))))
+(wire (pts (xy 297.18 241.3) (xy 299.72 241.3)) (stroke (width 0) (type default)) (uuid "02481640-d557-5e53-9493-3839b67c1e26"))
+(label "LDO2_OUT" (at 299.72 241.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0d7e885f-40f2-54c2-aafa-f527068e0781"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 210.82 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6f97dd65-2d8c-597d-839b-ae3428d5577f") (property "Reference" "TP8" (at 317.5 211.455 90) (effects (font (size 1.27 1.27))))(property "Value" "BGR_OUT" (at 325.12 210.82 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "db3275eb-8b9d-5378-ba75-51aaf8d9aaff")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP8") (unit 1)))))
+(wire (pts (xy 325.12 210.82) (xy 327.66 210.82)) (stroke (width 0) (type default)) (uuid "cf0302b3-ac85-54eb-8389-a67d79bba3a0"))
+(label "BGR_OUT" (at 327.66 210.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d02682cb-2d3c-5ebe-96eb-d1bb06d29af0"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 215.9 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "41c6421d-962b-5db6-8e6c-cb45d85ec230") (property "Reference" "TP9" (at 317.5 216.535 90) (effects (font (size 1.27 1.27))))(property "Value" "AC1" (at 325.12 215.9 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 215.9 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "fabe5f9a-19ce-5c2a-9cb3-19fca5bacc69")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP9") (unit 1)))))
+(wire (pts (xy 325.12 215.9) (xy 327.66 215.9)) (stroke (width 0) (type default)) (uuid "341ffb59-be40-5363-a405-d7b0629b13eb"))
+(label "AC1" (at 327.66 215.9 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6838cc16-7ed3-5cd1-8c57-801caee103f8"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 220.98 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1fcd5477-c3ad-589c-869e-68ccc304cafa") (property "Reference" "TP10" (at 317.5 221.615 90) (effects (font (size 1.27 1.27))))(property "Value" "AC2" (at 325.12 220.98 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "32cdd178-36ab-5490-a1e9-09873f16e73d")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP10") (unit 1)))))
+(wire (pts (xy 325.12 220.98) (xy 327.66 220.98)) (stroke (width 0) (type default)) (uuid "97f44112-f549-5c20-a1b1-c308d6be0026"))
+(label "AC2" (at 327.66 220.98 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3d80c682-a855-5585-bdcd-499e6e75299c"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 226.06 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1b08c5bd-7bbd-580f-9c94-1d987da8842c") (property "Reference" "TP11" (at 317.5 226.695 90) (effects (font (size 1.27 1.27))))(property "Value" "CE_AC1" (at 325.12 226.06 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d9fb5e2e-d695-5d22-94fa-9d57e148f993")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP11") (unit 1)))))
+(wire (pts (xy 325.12 226.06) (xy 327.66 226.06)) (stroke (width 0) (type default)) (uuid "70a3cd7c-886d-5d09-9dff-e968dc3623fb"))
+(label "CE_AC1" (at 327.66 226.06 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c52cf1ef-928d-5484-b20c-4fcbf26edad7"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 231.14 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9b645479-21a7-52d0-b807-40f10cebb951") (property "Reference" "TP12" (at 317.5 231.775 90) (effects (font (size 1.27 1.27))))(property "Value" "CE_AC2" (at 325.12 231.14 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 231.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e614e776-4de5-57bd-98fd-232267fd4cb6")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP12") (unit 1)))))
+(wire (pts (xy 325.12 231.14) (xy 327.66 231.14)) (stroke (width 0) (type default)) (uuid "8ee04106-4e4a-5fa1-ba99-0f123f867d4a"))
+(label "CE_AC2" (at 327.66 231.14 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b76cca7e-a469-55fb-82cf-9f3ae07f3e43"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 236.22 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74f4859a-6713-5269-8fe3-f38594fae752") (property "Reference" "TP13" (at 317.5 236.855 90) (effects (font (size 1.27 1.27))))(property "Value" "CLK_OUT" (at 325.12 236.22 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "93c0c092-d2a0-58d3-a338-f800360ec27d")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP13") (unit 1)))))
+(wire (pts (xy 325.12 236.22) (xy 327.66 236.22)) (stroke (width 0) (type default)) (uuid "51dbc2df-ac7c-56fe-bd29-ba1fb7e6adf5"))
+(label "CLK_OUT" (at 327.66 236.22 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f5d7cca8-4175-5661-bd99-3f2c7f1588a2"))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 241.3 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7f195825-8ebf-58a9-866e-cad9044e2d8d") (property "Reference" "TP14" (at 317.5 241.935 90) (effects (font (size 1.27 1.27))))(property "Value" "RESET_N_OUT" (at 325.12 241.3 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 325.12 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 325.12 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "959adc61-815b-5a83-822a-b6922b89e37c")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP14") (unit 1)))))
+(wire (pts (xy 325.12 241.3) (xy 327.66 241.3)) (stroke (width 0) (type default)) (uuid "628637a8-6c95-560d-94a6-67cfcb86ff99"))
+(label "RESET_N_OUT" (at 327.66 241.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "51af7c1b-7fca-5766-af5f-d950e4d33af7"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 210.82 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5f8705ea-2236-50ee-894d-bb2a23cae5be") (property "Reference" "TP15" (at 345.44 211.455 90) (effects (font (size 1.27 1.27))))(property "Value" "POWER_STABLE_OUT" (at 353.06 210.82 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "002242cd-5f32-5bf1-a131-04ac740ab297")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP15") (unit 1)))))
+(wire (pts (xy 353.06 210.82) (xy 355.6 210.82)) (stroke (width 0) (type default)) (uuid "b05786eb-a17b-577f-a38f-f6ac46d598a4"))
+(label "POWER_STABLE_OUT" (at 355.6 210.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "daad4ffc-d300-5839-baae-b08d13138d46"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 215.9 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1b2bc39f-1fc0-5227-9edd-e20c87a589b1") (property "Reference" "TP16" (at 345.44 216.535 90) (effects (font (size 1.27 1.27))))(property "Value" "CLK_IN" (at 353.06 215.9 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 215.9 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2839b16a-d747-524b-90d1-5ff190a235c7")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP16") (unit 1)))))
+(wire (pts (xy 353.06 215.9) (xy 355.6 215.9)) (stroke (width 0) (type default)) (uuid "301fc54f-4346-505b-afff-0b17977fc7c3"))
+(label "CLK_IN" (at 355.6 215.9 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f8a7ad7d-2bc2-59c9-bcd0-a3944c137a24"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 220.98 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "01165c6b-e30a-5e02-99b7-651e780494e2") (property "Reference" "TP17" (at 345.44 221.615 90) (effects (font (size 1.27 1.27))))(property "Value" "RESET_N_IN" (at 353.06 220.98 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "60abd87f-9893-5278-9ad2-48ca719a635b")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP17") (unit 1)))))
+(wire (pts (xy 353.06 220.98) (xy 355.6 220.98)) (stroke (width 0) (type default)) (uuid "ea636f95-fcd3-59e5-9c40-0e7073d9c292"))
+(label "RESET_N_IN" (at 355.6 220.98 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5d214ae8-7f54-50b1-99f0-ab0dd1507304"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 226.06 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1bd45509-0f75-5760-bd0e-64988dfeab1c") (property "Reference" "TP18" (at 345.44 226.695 90) (effects (font (size 1.27 1.27))))(property "Value" "POWER_STABLE_IN" (at 353.06 226.06 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "485196ae-b3e6-52ff-aafa-9d604344c60b")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP18") (unit 1)))))
+(wire (pts (xy 353.06 226.06) (xy 355.6 226.06)) (stroke (width 0) (type default)) (uuid "11b97d39-14f5-52b3-bd2b-0ae2edb6d949"))
+(label "POWER_STABLE_IN" (at 355.6 226.06 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4f15867f-8153-5264-90bc-139704c65d8b"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 231.14 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3cc67e2e-0382-56f1-9b5f-e42dac5a2cb7") (property "Reference" "TP19" (at 345.44 231.775 90) (effects (font (size 1.27 1.27))))(property "Value" "MODULATED_BIT_OUT" (at 353.06 231.14 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 231.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e1ba744e-387b-5925-93ba-c4a35d731185")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP19") (unit 1)))))
+(wire (pts (xy 353.06 231.14) (xy 355.6 231.14)) (stroke (width 0) (type default)) (uuid "4a066aa4-4dce-5884-a886-944f0225b2b7"))
+(label "MODULATED_BIT_OUT" (at 355.6 231.14 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ceb4049d-80f5-5151-83f3-305aebe4e941"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 236.22 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4b57ef29-f7e9-5327-94a0-bd1400e921d8") (property "Reference" "TP20" (at 345.44 236.855 90) (effects (font (size 1.27 1.27))))(property "Value" "MODULATED_BIT_IN" (at 353.06 236.22 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5223fac2-92f4-5550-b697-f433b41863d1")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP20") (unit 1)))))
+(wire (pts (xy 353.06 236.22) (xy 355.6 236.22)) (stroke (width 0) (type default)) (uuid "26e34627-b02c-5f93-b521-19a4c57fccd8"))
+(label "MODULATED_BIT_IN" (at 355.6 236.22 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "21cf8e16-f1b0-5598-aeae-158e3b47f7d5"))
+(symbol (lib_id "Connector:TestPoint") (at 353.06 241.3 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b1a0dc0f-4ee6-5853-b2a9-45c36592f694") (property "Reference" "TP21" (at 345.44 241.935 90) (effects (font (size 1.27 1.27))))(property "Value" "SPI_SCK" (at 353.06 241.3 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 353.06 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 353.06 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 353.06 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0bc77495-0f3e-5c4a-a413-b27739c88864")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP21") (unit 1)))))
+(wire (pts (xy 353.06 241.3) (xy 355.6 241.3)) (stroke (width 0) (type default)) (uuid "9e483ae8-b4da-5e53-a8a3-8cc41512b10f"))
+(label "SPI_SCK" (at 355.6 241.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4729c80b-6b83-54ff-99ee-481232c9dcb3"))
+(symbol (lib_id "Connector:TestPoint") (at 381 210.82 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5ca4e92e-2c9a-556f-b469-695b296146b6") (property "Reference" "TP22" (at 373.38 211.455 90) (effects (font (size 1.27 1.27))))(property "Value" "SPI_CS_N" (at 381 210.82 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 210.82 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "049cd237-be8e-5199-b588-89739eb0e934")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP22") (unit 1)))))
+(wire (pts (xy 381 210.82) (xy 383.54 210.82)) (stroke (width 0) (type default)) (uuid "bdaba17e-a85e-5358-8766-9c62fa805b02"))
+(label "SPI_CS_N" (at 383.54 210.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a936d314-1448-55f9-851e-318aa136c11b"))
+(symbol (lib_id "Connector:TestPoint") (at 381 215.9 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3f7e8b12-a943-569d-a324-9cc128391b41") (property "Reference" "TP23" (at 373.38 216.535 90) (effects (font (size 1.27 1.27))))(property "Value" "SPI_MOSI" (at 381 215.9 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 215.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 215.9 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1c7ee2fc-a4bc-5fd1-aefa-4bfdc7e6857b")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP23") (unit 1)))))
+(wire (pts (xy 381 215.9) (xy 383.54 215.9)) (stroke (width 0) (type default)) (uuid "e2fc98f3-31fa-5f35-be82-0f49060fe1c3"))
+(label "SPI_MOSI" (at 383.54 215.9 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7b6d05ec-5c7a-5ee7-8b5c-34e589b5b0b5"))
+(symbol (lib_id "Connector:TestPoint") (at 381 220.98 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "77d7cae7-a1cb-5f12-879e-64a01fce9d97") (property "Reference" "TP24" (at 373.38 221.615 90) (effects (font (size 1.27 1.27))))(property "Value" "SPI_MISO" (at 381 220.98 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d9965f57-170a-5a26-94e9-dd24b27e3f74")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP24") (unit 1)))))
+(wire (pts (xy 381 220.98) (xy 383.54 220.98)) (stroke (width 0) (type default)) (uuid "4ce1dab0-ea38-5375-a337-ef4bad200989"))
+(label "SPI_MISO" (at 383.54 220.98 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ccc6c62c-1953-556d-8ca3-b8462f707598"))
+(symbol (lib_id "Connector:TestPoint") (at 381 226.06 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "eb0f18b4-5b90-58cd-b5da-6375d67b7a16") (property "Reference" "TP25" (at 373.38 226.695 90) (effects (font (size 1.27 1.27))))(property "Value" "GND" (at 381 226.06 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "3adb4e46-2dfc-5bdc-a19d-a9f6a84c2855")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP25") (unit 1)))))
+(wire (pts (xy 381 226.06) (xy 383.54 226.06)) (stroke (width 0) (type default)) (uuid "bf1f0d90-2342-5435-9c08-711c397442fb"))
+(label "GND" (at 383.54 226.06 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "82de1ffe-3966-5c52-9efc-4adaf849537c"))
+(symbol (lib_id "Connector:TestPoint") (at 381 231.14 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "413c1713-8ffd-5b7b-87e1-4dc80326a113") (property "Reference" "TP26" (at 373.38 231.775 90) (effects (font (size 1.27 1.27))))(property "Value" "GND" (at 381 231.14 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 231.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f8f01df6-f367-5015-aa2d-3749e610ec68")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP26") (unit 1)))))
+(wire (pts (xy 381 231.14) (xy 383.54 231.14)) (stroke (width 0) (type default)) (uuid "d299d71e-a69f-5f17-be40-65df6d4edc30"))
+(label "GND" (at 383.54 231.14 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "384fb781-d0de-5754-933c-8fd7a607c646"))
+(symbol (lib_id "Connector:TestPoint") (at 381 236.22 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a39a9770-e04f-538d-8bfd-1c78d2315d59") (property "Reference" "TP27" (at 373.38 236.855 90) (effects (font (size 1.27 1.27))))(property "Value" "GND" (at 381 236.22 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 236.22 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "26137408-ee9b-54ef-9261-2cc3b2e8fa63")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP27") (unit 1)))))
+(wire (pts (xy 381 236.22) (xy 383.54 236.22)) (stroke (width 0) (type default)) (uuid "2e53d37d-6282-5093-9b9d-2f3964779fbe"))
+(label "GND" (at 383.54 236.22 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5b54911a-c42e-5b9f-829c-bcb294575439"))
+(symbol (lib_id "Connector:TestPoint") (at 381 241.3 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7c90cb24-2e65-5409-a35b-706f925aaec9") (property "Reference" "TP28" (at 373.38 241.935 90) (effects (font (size 1.27 1.27))))(property "Value" "GND" (at 381 241.3 90) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature" (at 381 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 381 241.3 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 381 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "248251b1-97ce-524f-9e17-118dc66e603c")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "TP28") (unit 1)))))
+(wire (pts (xy 381 241.3) (xy 383.54 241.3)) (stroke (width 0) (type default)) (uuid "fbc89e63-f307-5bb7-bcdf-2f93a7943e18"))
+(label "GND" (at 383.54 241.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8877c789-623e-5082-bbda-a88e755dad43"))
+(symbol (lib_id "Mechanical:MountingHole_Pad") (at 152.4 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6e624e92-c9f2-5450-9cd2-5e5af4fa097c") (property "Reference" "H1" (at 152.4 255.27 0) (effects (font (size 1.27 1.27))))(property "Value" "M3" (at 152.4 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 152.4 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 152.4 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 152.4 259.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "770d0422-4b5b-52b5-b9c3-514bb5b53572")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "H1") (unit 1)))))
+(wire (pts (xy 152.4 261.62) (xy 152.4 264.16)) (stroke (width 0) (type default)) (uuid "072df93f-9e7d-5790-8c53-994e3bf5e70f"))
+(label "GND" (at 152.4 264.16 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f0e27417-a7f4-5e4a-9c02-0331af4deb2f"))
+(symbol (lib_id "Mechanical:MountingHole_Pad") (at 165.1 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fcf0ec63-48b5-53b4-8dfe-bd88e396ee10") (property "Reference" "H2" (at 165.1 255.27 0) (effects (font (size 1.27 1.27))))(property "Value" "M3" (at 165.1 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 165.1 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 165.1 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 165.1 259.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5c9a9060-0790-53bd-a8e1-9ad5597a3b5c")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "H2") (unit 1)))))
+(wire (pts (xy 165.1 261.62) (xy 165.1 264.16)) (stroke (width 0) (type default)) (uuid "2fe1547a-eec3-5da9-8def-fdf9d2b89609"))
+(label "GND" (at 165.1 264.16 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d996e926-b13f-5b40-8a96-63be8d6bb70b"))
+(symbol (lib_id "Mechanical:MountingHole_Pad") (at 177.8 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9638eafe-66a7-5506-94c2-4cc084e92d12") (property "Reference" "H3" (at 177.8 255.27 0) (effects (font (size 1.27 1.27))))(property "Value" "M3" (at 177.8 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 177.8 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 177.8 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 177.8 259.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7eebffa2-9f08-50b2-a819-70ab3f864051")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "H3") (unit 1)))))
+(wire (pts (xy 177.8 261.62) (xy 177.8 264.16)) (stroke (width 0) (type default)) (uuid "6e6598c6-3b64-56eb-993a-4de424f121be"))
+(label "GND" (at 177.8 264.16 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a1810646-bdc1-5035-bd32-ce7beb01bb1e"))
+(symbol (lib_id "Mechanical:MountingHole_Pad") (at 190.5 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "cd6937d4-afab-5749-8ab7-499b2232d024") (property "Reference" "H4" (at 190.5 255.27 0) (effects (font (size 1.27 1.27))))(property "Value" "M3" (at 190.5 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 190.5 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 190.5 259.08 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Description" "" (at 190.5 259.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "bcbfa8e2-d3fe-5403-a3a5-0cc195735204")) (instances (project "rfid8549_testboard" (path "/ef622ad2-df9b-5948-94f6-2bc282aba9b9" (reference "H4") (unit 1)))))
+(wire (pts (xy 190.5 261.62) (xy 190.5 264.16)) (stroke (width 0) (type default)) (uuid "4c25d560-d43c-5874-a07c-4839249fbf1a"))
+(label "GND" (at 190.5 264.16 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cfaa3577-09c5-5a6d-b955-2c1b949292d8"))
+(rectangle (start 10.16 10.16) (end 134.62 116.84) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "980228bf-8acd-535d-b30c-d457e56f0b2f"))
+(text "Supplies, source selection and current measurement" (exclude_from_sim no) (at 12.7 14.605 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "09e067a1-139d-596e-97bd-40ee96452c9f"))
+(text "Power up GND, IOVDD 3.3 V (20 mA limit), DVDD 1.2 V (5 mA, never > 1.32 V), AVDD." (exclude_from_sim no) (at 12.7 106.68 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "d0df4b98-24ae-567d-8c9c-887470e40b9e"))
+(text "JP10-JP12: remove and insert a DMM to read each rail current." (exclude_from_sim no) (at 12.7 110.49 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "c8ebfa74-68f8-54cb-bf5c-7c0bf2b2e720"))
+(text "JP7 / JP8: 1-2 = from the chip (V_RECT, LDO1_OUT), 2-3 = from the bench." (exclude_from_sim no) (at 12.7 114.3 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "7ca2e1ce-b161-5277-8c05-71d2298aac42"))
+(rectangle (start 10.16 121.92) (end 134.62 170.18) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "50176703-c9c2-5443-9717-c5a118304d74"))
+(text "LDO_1 reference" (exclude_from_sim no) (at 12.7 126.365 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "201a4fd3-2daa-5332-9763-e52db929058a"))
+(text "The bandgap output is not routed on the die: force LDO1_VREF = 1.000 V" (exclude_from_sim no) (at 12.7 163.83 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "cb8cddb1-a996-5a68-b5a6-f7af896b3014"))
+(text "from RV1 (JP9 1-2) or from J4 (JP9 2-3). LDO1_OUT = 1.2 x LDO1_VREF." (exclude_from_sim no) (at 12.7 167.64 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "5e1fcbf7-133d-5330-86fc-70230ec30da3"))
+(rectangle (start 10.16 175.26) (end 134.62 248.92) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "776ee32a-8386-58f7-b5e4-8b7db15ed84c"))
+(text "AFE output loads (values TBD with the analog team)" (exclude_from_sim no) (at 12.7 179.705 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "5dbb8191-6473-5bc8-b4bc-20558c801a2b"))
+(text "C8 = V_RECT storage capacitor (Cext). DNP parts are load footprints." (exclude_from_sim no) (at 12.7 246.38 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "9e614735-e524-585c-80bc-409424c11542"))
+(rectangle (start 139.7 10.16) (end 281.94 170.18) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "ce7bd9e6-3825-5f5d-a693-e25af0db9292"))
+(text "RFID8549 (QFN-28, 5 x 5 mm)" (exclude_from_sim no) (at 142.24 14.605 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "df695352-d41e-5750-9837-e874ada6c7ba"))
+(text "Pin 1 = S1 (AC2), bottom-left, counter-clockwise. EP to GND." (exclude_from_sim no) (at 142.24 163.83 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "e6699e07-471f-591e-8e14-7a6ede33c9d0"))
+(text "SPI_MISO tri-state pins are swapped on silicon: keep R9 pull-down, no pull-up anywhere." (exclude_from_sim no) (at 142.24 167.64 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "fd637507-1cf9-5331-b7d6-584059c7b80e"))
+(rectangle (start 139.7 175.26) (end 281.94 248.92) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "2c2544e0-5ea6-56aa-a0fd-10bb56e13c5e"))
+(text "Antenna and clock-extractor inputs" (exclude_from_sim no) (at 142.24 179.705 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "098da437-b95d-51a2-afdd-ee5e82652fec"))
+(text "AC1/AC2 are bare pads, no ESD: drive J3 only from a floating source" (exclude_from_sim no) (at 142.24 238.76 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "76044cda-dc31-5c43-8f54-2ba7dbaeb30a"))
+(text "(isolation transformer or a coil in a 134.2 kHz field). C13/C14: tuning, TBD." (exclude_from_sim no) (at 142.24 242.57 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "ae4acc4e-ddef-511d-ac99-a7d877a0a0ec"))
+(text "JP5/JP6: 1-2 = AC to clock extractor (D6), 2-3 = park at GND. Remove to inject on J5/J6." (exclude_from_sim no) (at 142.24 246.38 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "a859b9b1-30af-5e45-89a3-e458fbf8b3eb"))
+(rectangle (start 287.02 10.16) (end 410.21 99.06) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "0f57710b-de1f-5a50-b57b-23f5525c56ad"))
+(text "ESP32-C3 jig header (esp32c3/main/rfid_tag.h)" (exclude_from_sim no) (at 289.56 14.605 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "e581ee91-bbbe-5f77-899a-1a9e5fffc37a"))
+(text "J2: 1 CLK GPIO0, 3 RESET_N GPIO1, 5 POWER GPIO3, 7 SCK GPIO4," (exclude_from_sim no) (at 289.56 92.71 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "74cd1bf7-242b-5b71-808d-9dea5a19a6cd"))
+(text "8 CS_N GPIO5, 9 MOSI GPIO6, 10 MISO GPIO7, 11 MOD GPIO10, 2/4/6/12 GND." (exclude_from_sim no) (at 289.56 96.52 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "38179b98-58d7-5ea8-bc1e-1b9e3923da69"))
+(rectangle (start 287.02 104.14) (end 410.21 199.39) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "bb9d93b9-7645-5585-947d-2eb459763623"))
+(text "AFE-to-core loop jumpers" (exclude_from_sim no) (at 289.56 108.585 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "8deaa734-872a-5e8c-ae1c-fe7e0487c227"))
+(text "JP1-JP3: 1-2 = chip AFE drives the core (D6), 2-3 = jig drives it (D1-D5)." (exclude_from_sim no) (at 289.56 193.04 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "297d9bb4-1419-544b-80d0-5856d1bec8c3"))
+(text "JP4 open = S6 held high, modulator off. J7: clock from a generator (unplug J2 pin 1)." (exclude_from_sim no) (at 289.56 196.85 0) (effects (font (size 1.524 1.524) italic) (justify left bottom)) (uuid "2de3e9e9-dc5a-5709-88c2-57185efda0cf"))
+(rectangle (start 287.02 203.2) (end 410.21 248.92) (stroke (width 0.254) (type dash) (color 72 72 160 1)) (fill (type none)) (uuid "45c6956a-4e05-5aaa-a088-da4c7f0f50ca"))
+(text "Test points" (exclude_from_sim no) (at 289.56 207.645 0) (effects (font (size 2.032 2.032) (thickness 0.4064) bold (color 72 72 160 1)) (justify left bottom)) (uuid "1f82adac-6d00-5a17-8713-79eba28d464e"))
+(sheet_instances (path "/" (page "1"))) (embedded_fonts no))
